@@ -1,0 +1,16 @@
+@import "reset";
+
+@import "variables";
+
+@import "small-default";
+
+// @media only screen and (min-width: 560px) {
+//   @import "medium";
+// }
+
+// pluralsight original value: 1140px
+// (or 60rem)
+// [possible other value 1002px @OscarG]
+@media only screen and (min-width: 1140px) {
+  @import "large";
+}
