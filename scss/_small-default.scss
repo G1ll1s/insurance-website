@@ -8,13 +8,33 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 
 /* -------------- Body -------------- __ */
-// body {
+body {
+   margin: 0 auto;
+   background-color: #EBEBEB;
+
+   p{
+      font-family: "Fira sans", sans-serif, Arial;
+      font-weight: 500;
+   }//end of p
+
+   h1{
+      font-family: "Frank Ruhl Libre", serif, helvetica;
+      font-optical-sizing: auto;
+      font-weight: 900;
+   }//end of h3
+
 //   font-family: $defaultFont;
 //   font-weight: $normalWeight;
-// }
+} //end of body
 
 
 /* -------------- Header ------------- __ */
+header{
+   
+}
+
+
+
 // header {
 //   background-color: $primaryColor;
 //   color: $secondaryColor;
@@ -45,10 +65,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 //   }
 // }
 
-h3 {
+h1 {
    color: $primaryColor;
+   font-size: 45px;
 }
-
+p{
+   font-size: 14px;
+}
 /* ----------- Navigation ----------- __ */
 // nav {
 //   background-color: $secondaryColor;
