@@ -113,9 +113,28 @@ html {
 
 /* __ */
 /* -------------- Body -------------- __ */
+body {
+  margin: 0 auto;
+  background-color: #EBEBEB;
+}
+body p {
+  font-family: "Fira sans", sans-serif, Arial;
+  font-weight: 500;
+}
+body h1 {
+  font-family: "Frank Ruhl Libre", serif, helvetica;
+  font-optical-sizing: auto;
+  font-weight: 900;
+}
+
 /* -------------- Header ------------- __ */
-h3 {
+h1 {
   color: #f00;
+  font-size: 45px;
+}
+
+p {
+  font-size: 14px;
 }
 
 /* ----------- Navigation ----------- __ */
