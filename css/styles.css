@@ -1,0 +1,67 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #EBEBEB;
+  
+}
+
+p {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+h3 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+/* 
+.fira-sans-medium {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+} */
+/* <uniquifier>: Use a uniquifier for the class name */
+
+/* .frank-ruhl {
+  font-family: "Frank Ruhl Libre", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+} */
+
+
+
+/*----------------------- Header ------------------------*/
+header {
+  display: grid;
+}
+
+
+
+
+
+
+
+/*------------------------ Main ------------------------*/
+main {
+  display: grid;
+}
+main p {
+  font-family: "Fira Sans", serif;
+}
+
+
+
+
+
+
+/*----------------------- Footer -----------------------*/
+footer {
+  display: grid;
+}
+
+
+
+
