@@ -263,25 +263,28 @@ footer{
       align-items: center;
    }
    .box-a{
-      background-color: #C7DDEA;
+      background-color: $lightblueColor;
       font-size: 35px;
       font-family: "Frank Ruhl Libre";
       display: flex;
       justify-content: center;
       align-items: center;
    }
+   .box-b{
+      background-color: $whiteColor;
+   }
    .box-c{
-      background-color: #EBEBEB;
+      background-color: $lightgreyColor;
       margin: 0;
       padding: 0;
    }
    .box-d{
-      background-color: #F17949;
+      background-color: $orangeColor;
 
    }
    div.scroll-to-top{
       height: 68px;
-      background-color: #A9A19E;
+      background-color: $greyColor;
       width: 375px;
       text-align: center;
       p{
