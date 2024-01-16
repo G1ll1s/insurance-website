@@ -157,6 +157,52 @@ p{
 
 
 /* -------------- Footer -------------- __ */
+footer{
+   margin: 0 auto;
+   width: 370px;
+   font-family: "fira sans";
+   text-align: center;
+   section{
+      display:grid;
+      grid-template-columns: 1fr;
+   }
+   article{
+      width: 370px;
+      height: 170px;
+   }
+   .footbox-a{
+      background-color: #C7DDEA;
+      font-size: 35px;
+      font-family: "Frank Ruhl Libre";
+   }
+   .footbox-c{
+      background-color: #EBEBEB;
+   }
+   .footbox-d{
+      background-color: #F17949;
+   }
+   div.scroll-to-top{
+      height: 68px;
+      background-color: #A9A19E;
+      width: 370px;
+      text-align: center;
+   }
+   .arrow-up{
+      padding-top: 25px;
+      text-decoration: none;
+      color: black;
+   }
+   .footnumb{
+      font-size: 35px;
+      font-family: "Frank Ruhl Libre";
+      color: #838383;
+      margin: 0;
+      width: 60px;
+      height: 60px;
+      align-self: flex-start;
+   }
+}
+
 // footer {
 //   width: 100%;
 //   background-color: $primaryColor;

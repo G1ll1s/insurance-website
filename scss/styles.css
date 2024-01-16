@@ -140,6 +140,52 @@ p {
 /* ----------- Navigation ----------- __ */
 /* ------------- MAIN -------------- __ */
 /* -------------- Footer -------------- __ */
+footer {
+  margin: 0 auto;
+  width: 370px;
+  font-family: "fira sans";
+  text-align: center;
+}
+footer section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+footer article {
+  width: 370px;
+  height: 170px;
+}
+footer .footbox-a {
+  background-color: #C7DDEA;
+  font-size: 35px;
+  font-family: "Frank Ruhl Libre";
+}
+footer .footbox-c {
+  background-color: #EBEBEB;
+}
+footer .footbox-d {
+  background-color: #F17949;
+}
+footer div.scroll-to-top {
+  height: 68px;
+  background-color: #A9A19E;
+  width: 370px;
+  text-align: center;
+}
+footer .arrow-up {
+  padding-top: 25px;
+  text-decoration: none;
+  color: black;
+}
+footer .footnumb {
+  font-size: 35px;
+  font-family: "Frank Ruhl Libre";
+  color: #838383;
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  align-self: flex-start;
+}
+
 /* ----- Clearfix: Force an Element not to collapse -- */
 @media only screen and (min-width: 1140px) {
   /* ------------- Body -------------- __ */
