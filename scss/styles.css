@@ -184,47 +184,68 @@ header article nav p {
 /* -------------- Footer -------------- __ */
 footer {
   margin: 0 auto;
-  width: 370px;
+  width: 375px;
   font-family: "fira sans";
-  text-align: center;
 }
 footer section {
   display: grid;
   grid-template-columns: 1fr;
 }
 footer article {
-  width: 370px;
+  width: 375px;
   height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-footer .footbox-a {
+footer p {
+  width: 257px;
+  height: 113px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .box-a {
   background-color: #C7DDEA;
   font-size: 35px;
   font-family: "Frank Ruhl Libre";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-footer .footbox-c {
+footer .box-c {
   background-color: #EBEBEB;
+  margin: 0;
+  padding: 0;
 }
-footer .footbox-d {
+footer .box-d {
   background-color: #F17949;
 }
 footer div.scroll-to-top {
   height: 68px;
   background-color: #A9A19E;
-  width: 370px;
+  width: 375px;
   text-align: center;
+}
+footer div.scroll-to-top p {
+  width: 375px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 footer .arrow-up {
   padding-top: 25px;
   text-decoration: none;
   color: black;
 }
-footer .footnumb {
+footer .numb {
   font-size: 35px;
   font-family: "Frank Ruhl Libre";
   color: #838383;
-  margin: 0;
-  width: 60px;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  width: 375px;
   height: 60px;
+  position: absolute;
   align-self: flex-start;
 }
 
