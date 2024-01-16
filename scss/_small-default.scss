@@ -23,7 +23,7 @@ body {
       font-family: "Frank Ruhl Libre", serif, helvetica;
       // font-optical-sizing: auto;
       font-weight: 900;
-   }//end of h3
+   }//end of h1
 
 //   font-family: $defaultFont;
 //   font-weight: $normalWeight;
@@ -222,7 +222,6 @@ header{
 /* -------------- Footer -------------- __ */
 footer{
    margin: 0 auto;
-   // width: 370px;
    font-family: "fira sans";
 
    section{
@@ -230,7 +229,6 @@ footer{
       grid-template-columns: 1fr;
    }
    article{
-      width: 375px;
       height: 170px;
       display: flex;
       justify-content: center;
@@ -263,10 +261,8 @@ footer{
    div.scroll-to-top{
       height: 68px;
       background-color: #A9A19E;
-      width: 375px;
       text-align: center;
       p{
-         width: 375px;
          height: fit-content;
       }
    }
