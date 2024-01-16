@@ -11,7 +11,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
    margin: 0 auto;
    background-color: #EBEBEB;
-
+   max-width: 375px;
+   
    p{
       font-family: "Fira sans", sans-serif, Arial;
       font-weight: $normalWeight;
@@ -33,7 +34,6 @@ body {
 header{
    display: grid;
    margin: 0 auto;
-   max-width: 375px;
 
    article{
       display: flex;
@@ -72,7 +72,7 @@ header{
             font-family: "Fira sans", sans-serif;
             font-size: 10px;
             font-weight: $boldWeight;
-            padding: 14px 40px;
+            padding: 14px 45px;
             border: 0;
             border-radius: 30px;
             margin-left: 16px;
@@ -222,7 +222,7 @@ header{
 /* -------------- Footer -------------- __ */
 footer{
    margin: 0 auto;
-   width: 375px;
+   // width: 370px;
    font-family: "fira sans";
 
    section{
