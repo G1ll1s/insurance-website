@@ -116,6 +116,7 @@ html {
 body {
   margin: 0 auto;
   background-color: #EBEBEB;
+  max-width: 375px;
 }
 body p {
   font-family: "Fira sans", sans-serif, Arial;
@@ -130,7 +131,6 @@ body h1 {
 header {
   display: grid;
   margin: 0 auto;
-  max-width: 375px;
 }
 header article {
   display: flex;
@@ -163,7 +163,7 @@ header article .covered button {
   font-family: "Fira sans", sans-serif;
   font-size: 10px;
   font-weight: 700;
-  padding: 14px 40px;
+  padding: 14px 45px;
   border: 0;
   border-radius: 30px;
   margin-left: 16px;
@@ -184,7 +184,6 @@ header article nav p {
 /* -------------- Footer -------------- __ */
 footer {
   margin: 0 auto;
-  width: 375px;
   font-family: "fira sans";
 }
 footer section {
