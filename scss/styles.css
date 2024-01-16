@@ -123,18 +123,60 @@ body p {
 }
 body h1 {
   font-family: "Frank Ruhl Libre", serif, helvetica;
-  font-optical-sizing: auto;
   font-weight: 900;
 }
 
 /* -------------- Header ------------- __ */
-h1 {
-  color: #000;
+header {
+  display: grid;
+  margin: 0 auto;
+  max-width: 375px;
+}
+header article {
+  display: flex;
+  flex: 1;
+}
+header article .covered {
+  background-color: #C7DDEA;
+}
+header article .covered h1 {
+  margin-top: 70px;
+  margin-left: 16px;
+  margin-bottom: 25px;
   font-size: 45px;
 }
-
-p {
+header article .covered p {
+  opacity: 70%;
   font-size: 14px;
+  line-height: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 40px;
+}
+header article .covered p span {
+  opacity: 1;
+  color: white;
+}
+header article .covered button {
+  background-color: white;
+  margin-bottom: 40px;
+  font-family: "Fira sans", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 14px 40px;
+  border: 0;
+  border-radius: 30px;
+  margin-left: 16px;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.144);
+}
+header article .covered img {
+  max-width: 100%;
+  height: 334px;
+  margin-left: 16px;
+  margin-bottom: -3px;
+}
+header article nav p {
+  display: inline;
 }
 
 /* ----------- Navigation ----------- __ */
@@ -189,6 +231,6 @@ footer .footnumb {
 /* ----- Clearfix: Force an Element not to collapse -- */
 @media only screen and (min-width: 1140px) {
   /* ------------- Body -------------- __ */
-  /* ------------- Navigation -------------- __ */
+  /* ------------- Header -------------- __ */
   /* ------------- MAIN -------------- __ */
 }/*# sourceMappingURL=styles.css.map */
