@@ -181,6 +181,16 @@ header article nav p {
 
 /* ----------- Navigation ----------- __ */
 /* ------------- MAIN -------------- __ */
+main {
+  background-color: #A9A19E;
+}
+main h1 {
+  color: white;
+}
+main aside {
+  background-color: #FAB131;
+}
+
 /* -------------- Footer -------------- __ */
 footer {
   margin: 0 auto;
