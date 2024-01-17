@@ -101,6 +101,7 @@ input, select {
 }
 
 /* ---------- Colors ---------- */
+/* card-avatars' bg-colors */
 /* ---------- Spacing ---------- */
 /* ---------- Fonts ---------- */
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
@@ -141,7 +142,7 @@ body button {
   padding: 14px 45px;
   border: 0;
   border-radius: 30px;
-  box-shadow: 0px 2px rgba(0, 0, 0, 0.144);
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.5);
   margin: 45px 0px;
   cursor: pointer;
 }
@@ -244,6 +245,41 @@ main h1 {
 main section.upper {
   background-color: #A9A19E;
   padding: 0 16.5px;
+}
+main section.mid {
+  background-color: #A9A19E;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main section.mid article.card {
+  display: flex;
+  background-color: white;
+  width: 256px;
+  height: 308px;
+  border-radius: 4px;
+  margin: 2em auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+main section.mid article.card .avatar1 {
+  width: 236px;
+  height: 150px;
+  background-color: #C7DDEA;
+  border-radius: 4px;
+  margin: -1.5em auto auto auto;
+}
+main section.mid article.card .avatar2 {
+  width: 236px;
+  height: 150px;
+  background-color: #FAB131;
+  border-radius: 4px;
+  margin: -1.5em auto auto auto;
+}
+main section.mid article.card .avatar3 {
+  width: 236px;
+  height: 150px;
+  background-color: #F17949;
+  border-radius: 4px;
+  margin: -1.5em auto auto auto;
 }
 main section.lower {
   padding: 0 50px 90px;
