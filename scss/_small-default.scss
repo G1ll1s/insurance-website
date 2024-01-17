@@ -19,6 +19,10 @@ body {
       // font-optical-sizing: auto;
       font-weight: 900;
    }//end of h1
+   h3 {
+      font-family: $headerFont;
+      font-weight: $boldWeight;
+   }
 
    p {
       font-family: "Fira sans", sans-serif, Arial;
@@ -41,6 +45,11 @@ body {
       margin: 45px 0px;
       cursor: pointer;
    }//end of button
+   button:hover {
+     cursor: pointer;
+     transition: transform 0.15s ease-in-out;
+     transform: scale(1.08);
+   }
          
 //   font-family: $defaultFont;
 //   font-weight: $normalWeight;
@@ -282,16 +291,18 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     article.card {
-      display: flex;
+      // display: flex;
       background-color: white;
       width: 256px;
       height: 308px;
-      // justify-content: center;
-      // align-items: center;
+      align-items: center;
       border-radius: 4px;
       margin: 2em auto;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
       // padding: 40px 0px 25px;
+      // h3 {
+      //    position:fixed;
+      // }
       .avatar1 {
         width: 236px;
         height: 150px;
@@ -319,9 +330,44 @@ main {
       }
 
       .avatar1 img {
-        width: 40%; // Scale the image to fill the entire blue box
-        transform: translate(85%, 5%);
+        width: 40%;
+        transform: translate(83%, 5%);
       }
+      .avatar2 img {
+        width: 40%;
+        transform: translate(74%, 3%);
+      }
+      .avatar3 img {
+        width: 60%;
+        transform: translate(35%, 5%);
+      }
+      
+      h3, p {
+        text-align: center;
+        margin: 0.6rem auto;
+      }
+      h3 {
+        margin-top: 1.5rem;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: $boldWeight;
+        opacity: 0.9;
+        // position: absolute;
+      }
+      p {
+        font-size: 11px;
+        line-height: 18px;
+        font-weight: $boldWeight;
+        opacity: 0.5;
+        margin: auto 1.3rem;
+      }
+    }
+
+    article.card:hover {
+      cursor: pointer;
+      transition: transform 0.15s ease-in-out;
+      transform: scale(1.04);
+      box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.5);
     }
   }
   section.lower {
