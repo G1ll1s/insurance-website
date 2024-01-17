@@ -282,42 +282,46 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     article.card {
-       display: flex;
-       background-color: white;
-       width: 256px;
-       height: 308px;
-       // justify-content: center;
-       // align-items: center;
-       border-radius: 4px;
-       margin: 2em auto;
-       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-       // padding: 40px 0px 25px;
-       .avatar1 {
-         width: 236px;
-         height: 150px;
-         background-color: $lightblueColor;
-         border-radius: 4px;
-         margin: -1.5em auto auto auto;
-       }
-       .avatar2 {
-         width: 236px;
-         height: 150px;
-         background-color: $yellowColor;
-         border-radius: 4px;
-         margin: -1.5em auto auto auto;
-       }
-       .avatar3 {
-         width: 236px;
-         height: 150px;
-         background-color: $orangeColor;
-         border-radius: 4px;
-         margin: -1.5em auto auto auto;
-       }
-         // justify-content: center;
-         // align-items: center;
-    //     max-width: 256px;
-    //     text-align: center;
-    //     font-family: arial;
+      display: flex;
+      background-color: white;
+      width: 256px;
+      height: 308px;
+      // justify-content: center;
+      // align-items: center;
+      border-radius: 4px;
+      margin: 2em auto;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+      // padding: 40px 0px 25px;
+      .avatar1 {
+        width: 236px;
+        height: 150px;
+        // background-color: $lightblueColor;
+        background-color: $lightblueColor;
+        border-radius: 4px;
+        margin: -1.5em auto auto auto;
+        overflow: hidden;
+      }
+      .avatar2 {
+        width: 236px;
+        height: 150px;
+        background-color: $yellowColor;
+        border-radius: 4px;
+        margin: -1.5em auto auto auto;
+        overflow: hidden;
+      }
+      .avatar3 {
+        width: 236px;
+        height: 150px;
+        background-color: $orangeColor;
+        border-radius: 4px;
+        margin: -1.5em auto auto auto;
+        overflow: hidden;
+      }
+
+      .avatar1 img {
+        width: 40%; // Scale the image to fill the entire blue box
+        transform: translate(85%, 5%);
+      }
     }
   }
   section.lower {
