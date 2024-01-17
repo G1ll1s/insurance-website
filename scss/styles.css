@@ -305,6 +305,7 @@ footer div.scroll-to-top {
 footer div.scroll-to-top p {
   height: -moz-fit-content;
   height: fit-content;
+  text-align: center;
 }
 footer .numb {
   font-size: 35px;
@@ -343,4 +344,24 @@ footer .dark-box {
   /* ------------- Body -------------- __ */
   /* ------------- Header -------------- __ */
   /* ------------- MAIN -------------- __ */
+  /* -------------- Footer -------------- __ */
+  footer {
+    width: 1002px;
+  }
+  footer .how-it-works {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  footer article {
+    width: 334px;
+    height: 340px;
+  }
+  footer .numb {
+    width: 334px;
+  }
+  footer div.scroll-to-top {
+    width: 1002px;
+  }
+  footer .dark-box {
+    width: 1002px;
+  }
 }/*# sourceMappingURL=styles.css.map */
