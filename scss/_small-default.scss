@@ -261,6 +261,7 @@ footer{
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
    }
    .box-a{
       background-color: $lightblueColor;
@@ -269,6 +270,7 @@ footer{
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
    }
    .box-b{
       background-color: $whiteColor;
@@ -292,11 +294,6 @@ footer{
          height: fit-content;
       }
    }
-   .arrow-up{
-      padding-top: 25px;
-      text-decoration: none;
-      color: black;
-   }
    .numb{
       font-size: 35px;
       font-family: "Frank Ruhl Libre";
@@ -307,6 +304,26 @@ footer{
       height: 60px;
       position: absolute;
       align-self: flex-start;
+   }
+   .chevron::before {
+      border-style: solid;
+      border-width: 0.25em 0.25em 0 0;
+      content: '';
+      display: inline-block;
+      height: 0.45em;
+      left: 0.15em;
+      position: relative;
+      top: 0.15em;
+      transform: rotate(-45deg);
+      vertical-align: top;
+      width: 0.45em;
+   }
+   span{
+      color: $primaryColor;
+   }
+   .dark-box{
+      background-color: $darkgreyColor;
+      height: 218px;
    }
 }
    
