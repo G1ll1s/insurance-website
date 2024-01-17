@@ -223,6 +223,16 @@ header article .join-today h1 {
 
 /* ----------- Navigation ----------- __ */
 /* ------------- MAIN -------------- __ */
+main {
+  background-color: #A9A19E;
+}
+main h1 {
+  color: white;
+}
+main aside {
+  background-color: #FAB131;
+}
+
 /* -------------- Footer -------------- __ */
 footer {
   margin: 0 auto;
@@ -244,6 +254,7 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 footer .box-a {
   background-color: #C7DDEA;
@@ -252,9 +263,13 @@ footer .box-a {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+footer .box-b {
+  background-color: #FFFFFF;
 }
 footer .box-c {
-  background-color: #EBEBEB;
+  background-color: #E5E5E5;
   margin: 0;
   padding: 0;
 }
@@ -270,11 +285,6 @@ footer div.scroll-to-top p {
   height: -moz-fit-content;
   height: fit-content;
 }
-footer .arrow-up {
-  padding-top: 25px;
-  text-decoration: none;
-  color: black;
-}
 footer .numb {
   font-size: 35px;
   font-family: "Frank Ruhl Libre";
@@ -285,6 +295,26 @@ footer .numb {
   height: 60px;
   position: absolute;
   align-self: flex-start;
+}
+footer .chevron::before {
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: "";
+  display: inline-block;
+  height: 0.45em;
+  left: 0.15em;
+  position: relative;
+  top: 0.15em;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 0.45em;
+}
+footer span {
+  color: #000;
+}
+footer .dark-box {
+  background-color: #777574;
+  height: 218px;
 }
 
 /* ----- Clearfix: Force an Element not to collapse -- */

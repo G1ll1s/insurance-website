@@ -256,6 +256,25 @@ header{
 
 
 /* ------------- MAIN -------------- __ */
+main {
+  background-color: $greyColor;
+  h1 {
+    color: white;
+  }
+  // article {
+  //   background-color: red;
+  //   .card {
+  //     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  //     max-width: 256px;
+  //     margin: auto;
+  //     text-align: center;
+  //     font-family: arial;
+  //   }
+  // }
+  aside {
+    background-color: $yellowColor;
+  }
+}
 // main {
 //   figure.banner { width: 100%; }
 //   /* TODO: Check */
@@ -322,36 +341,37 @@ footer{
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
    }
    .box-a{
-      background-color: #C7DDEA;
+      background-color: $lightblueColor;
       font-size: 35px;
       font-family: "Frank Ruhl Libre";
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
+   }
+   .box-b{
+      background-color: $whiteColor;
    }
    .box-c{
-      background-color: #EBEBEB;
+      background-color: $lightgreyColor;
       margin: 0;
       padding: 0;
    }
    .box-d{
-      background-color: #F17949;
+      background-color: $orangeColor;
 
    }
    div.scroll-to-top{
       height: 68px;
-      background-color: #A9A19E;
+      background-color: $greyColor;
+      width: 375px;
       text-align: center;
       p{
          height: fit-content;
       }
-   }
-   .arrow-up{
-      padding-top: 25px;
-      text-decoration: none;
-      color: black;
    }
    .numb{
       font-size: 35px;
@@ -363,6 +383,26 @@ footer{
       height: 60px;
       position: absolute;
       align-self: flex-start;
+   }
+   .chevron::before {
+      border-style: solid;
+      border-width: 0.25em 0.25em 0 0;
+      content: '';
+      display: inline-block;
+      height: 0.45em;
+      left: 0.15em;
+      position: relative;
+      top: 0.15em;
+      transform: rotate(-45deg);
+      vertical-align: top;
+      width: 0.45em;
+   }
+   span{
+      color: $primaryColor;
+   }
+   .dark-box{
+      background-color: $darkgreyColor;
+      height: 218px;
    }
 }
    
