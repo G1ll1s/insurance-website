@@ -279,6 +279,7 @@ footer .box-d {
 footer div.scroll-to-top {
   height: 68px;
   background-color: #A9A19E;
+  width: 375px;
   text-align: center;
 }
 footer div.scroll-to-top p {
