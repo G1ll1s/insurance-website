@@ -36,7 +36,8 @@ body {
       padding: 14px 45px;
       border: 0;
       border-radius: 30px;          
-      box-shadow: 0px 2px rgba(0, 0, 0, 0.144);
+      box-shadow: 0px 2px rgba(0, 0, 0, 0.5);
+      // box-shadow: 0px 2px rgba(0, 0, 0, 0.144);
       margin: 45px 0px;
       cursor: pointer;
    }//end of button
@@ -270,19 +271,54 @@ main {
   // p {
   //   // font-family: $paragraphFont;
   // }
-  // article {
-  //   background-color: red;
-  //   .card {
-  //     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  //     max-width: 256px;
-  //     margin: auto;
-  //     text-align: center;
-  //     font-family: arial;
-  //   }
-  // }
   section.upper {
     background-color: $greyColor;
     padding: 0 $gutterMobile;
+  }
+  section.mid {
+    background-color: $greyColor;
+    // padding: auto auto 50px auto;
+    // padding: auto auto -300px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    article.card {
+       display: flex;
+       background-color: white;
+       width: 256px;
+       height: 308px;
+       // justify-content: center;
+       // align-items: center;
+       border-radius: 4px;
+       margin: 2em auto;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+       // padding: 40px 0px 25px;
+       .avatar1 {
+         width: 236px;
+         height: 150px;
+         background-color: $lightblueColor;
+         border-radius: 4px;
+         margin: -1.5em auto auto auto;
+       }
+       .avatar2 {
+         width: 236px;
+         height: 150px;
+         background-color: $yellowColor;
+         border-radius: 4px;
+         margin: -1.5em auto auto auto;
+       }
+       .avatar3 {
+         width: 236px;
+         height: 150px;
+         background-color: $orangeColor;
+         border-radius: 4px;
+         margin: -1.5em auto auto auto;
+       }
+         // justify-content: center;
+         // align-items: center;
+    //     max-width: 256px;
+    //     text-align: center;
+    //     font-family: arial;
+    }
   }
   section.lower {
     padding: 0 50px 90px;
@@ -346,7 +382,7 @@ footer {
    font-family: "fira sans";
 
    section {
-      display:grid;
+      display: grid;
       grid-template-columns: 1fr;
    }
    article {
