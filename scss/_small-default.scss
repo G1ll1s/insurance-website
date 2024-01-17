@@ -262,8 +262,11 @@ header{
 /* ------------- MAIN -------------- __ */
 main {
   background-color: $greyColor;
+  padding: 0px 16.5px;
   h1 {
     color: white;
+    font-size: 35px;
+    font-family: "Frank Ruhl Libre";
   }
   // article {
   //   background-color: red;
@@ -277,6 +280,11 @@ main {
   // }
   aside {
     background-color: $yellowColor;
+    font-family: "Frank Ruhl Libre";
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 // main {

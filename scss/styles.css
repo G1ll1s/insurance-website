@@ -232,12 +232,19 @@ header article .join-today h1 {
 /* ------------- MAIN -------------- __ */
 main {
   background-color: #A9A19E;
+  padding: 0px 16.5px;
 }
 main h1 {
   color: white;
+  font-size: 35px;
+  font-family: "Frank Ruhl Libre";
 }
 main aside {
   background-color: #FAB131;
+  font-family: "Frank Ruhl Libre";
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* -------------- Footer -------------- __ */
