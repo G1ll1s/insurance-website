@@ -1,4 +1,9 @@
 /* ------------- Body -------------- __ */
+body{
+  max-width: 1002px;
+  background-color: $lightgreyColor;
+
+}
 // body { background-image: url(../images/polonez_car.png) }
 //
 // div#wrapper {
@@ -10,6 +15,131 @@
 
 
 /* ------------- Header -------------- __ */
+header{
+  width: 100%;
+  grid-template-areas: 
+  "cov learn"
+  "cov join"
+  "nav nav";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 10px ;
+  
+
+  .covered{
+    grid-area: cov;
+    height: 100%;
+    padding: 0;
+    // display: flex;
+
+    h1{
+      margin: 100px 100px 10px ;
+    }
+
+    p{
+      position: relative;
+      margin-left: 100px;
+      margin-right: 138px;
+      margin-bottom: -5px;
+    }
+
+    img{
+      flex: 1;
+      width: 50%;
+      margin-left: 10rem;
+      margin-right: 16.5px;
+    }
+    button{
+      position: absolute;
+      top: 18rem;
+      margin-left: 5rem;
+      // margin: 70px 0px 230px 0px;
+      
+    }
+  }
+  
+  .nav{
+    background-color: $lightgreyColor;
+    grid-area: nav;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+    a{
+      flex-direction: row;
+    }
+
+  }
+
+  .learn-more{
+    grid-area: learn;
+    height: 100%;
+  }
+
+  .join-today{
+    grid-area: join;
+    height: 100%;
+  }
+
+}
+
+
+// header{
+//   margin: $centerAlign;
+//   display: grid;
+//   width: 100%;
+//   grid-template-areas: 
+//   "cov learn"
+//   "cov join"
+//   "nav nav";  
+//   grid-template-rows: 1fr 1fr 40px;
+//   grid-template-columns: 1fr 1fr;
+  
+//   .cov{
+//     grid-area: cov;
+//   }
+//   .navbar{
+//     grid-area: navbar;
+//   }
+//   .learn{
+//     grid-area: learn;
+//   }
+//   .join{
+//     grid-area: join;
+//   }
+
+//   article{
+
+//     .covered{
+//       // grid-area: cov;
+//       display: flex;
+
+//     }
+
+//     nav{
+//       // grid-area: nav;
+//       // display: flex;
+      
+//     }
+
+//     .learn-more{
+//       // grid-area: learn;
+//       display: flex;
+      
+//     }
+
+//     .join-today{
+//       // grid-area: join;
+//       display: flex;
+
+//     }
+
+//   }
+
+
+// }
+
 // nav {
 //   ul {
 //     margin-left: $gutter;
