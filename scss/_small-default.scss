@@ -14,70 +14,70 @@ body {
    max-width: 375px;
    min-width: 375px;  
    
-   p{
-      font-family: "Fira sans", sans-serif, Arial;
-      font-weight: $normalWeight;
-   }//end of p
-
-   
-   h1{
+   h1 {
       font-family: "Frank Ruhl Libre", serif, helvetica;
       // font-optical-sizing: auto;
       font-weight: 900;
    }//end of h1
 
+   p {
+      font-family: "Fira sans", sans-serif, Arial;
+      font-weight: $normalWeight;
+      font-size: $pSizeDefault;
+      line-height: $pLineHeight;
+      opacity: 0.7;
+   }//end of p
+
+   button {
+      background-color: white;            
+      font-family: "Fira sans", sans-serif;
+      font-size: 10px;
+      font-weight: $boldWeight;
+      padding: 14px 45px;
+      border: 0;
+      border-radius: 30px;          
+      box-shadow: 0px 2px rgba(0, 0, 0, 0.144);
+      margin: 45px 0px;
+      cursor: pointer;
+   }//end of button
+         
 //   font-family: $defaultFont;
 //   font-weight: $normalWeight;
 } //end of body
 
 
 /* -------------- Header ------------- __ */
-header{
+header {
    margin: 0 auto;
 
-   article{
+   article {
       display: grid;
-      
     
-      .covered{
+      .covered {
          background-color: $lightblueColor;
          display: flex;
          flex-wrap: wrap;
          padding: 0px 16.5px;
 
-         h1{
+         h1 {
             font-size: 45px;
             padding: 70px 0px 25px;
          }//end of h1
 
-         p{
+         p {
             opacity: 70%;
             font-size: 14px;
             line-height: 24px;
 
             
-            span{
+            span {
                opacity: 1;            
                color: white;
             }
             
          }//end of p
 
-         button{
-            background-color: white;            
-            font-family: "Fira sans", sans-serif;
-            font-size: 10px;
-            font-weight: $boldWeight;
-            padding: 14px 45px;
-            border: 0;
-            border-radius: 30px;          
-            box-shadow: 0px 2px rgba(0, 0, 0, 0.144);
-            margin: 45px 0px;
-            cursor: pointer;
-            
-         }//end of button
-         
-         img{
+         img {
             max-width: 100%;
             
             
@@ -85,7 +85,7 @@ header{
 
       }
 
-      nav{
+      nav {
          background-color: white;
          display: grid;
          margin: 0 auto;
@@ -100,7 +100,7 @@ header{
          align-items: center;
          text-align: center;
 
-         p{
+         p {
             font-weight: $semiboldWeight;
             font-size: 12px;
             color: $greyColor;
@@ -115,7 +115,7 @@ header{
 
       
       
-      // nav{
+      // nav {
       //    display: flex;
       //    margin: 0 auto;
       //    justify-content: center;
@@ -130,7 +130,7 @@ header{
       //    // flex-direction: row;
       //    // flex-wrap: wrap;
 
-      //    p{      
+      //    p {      
       //       font-weight: $semiboldWeight;
       //       // margin: 0 auto;
       //       // margin-top: 30px;
@@ -140,7 +140,7 @@ header{
 
       
       
-      .learn-more{
+      .learn-more {
          display: flex;
          flex-direction: column;
          
@@ -148,35 +148,35 @@ header{
          height: 315px;
          padding: 130px 0px;
 
-         p{
+         p {
             margin: auto;
             font-size: 11px;
             font-weight: $boldWeight;
             opacity: 65%;
             
          }
-         h1{
+         h1 {
             margin: auto;
             color: white;
             font-size: 32px;
          }
       }
 
-      .join-today{
+      .join-today {
          display: flex;
          flex-direction: column;
          background-color: $yellowColor;
          height: 315px;
          padding: 130px 0px ;
 
-         p{
+         p {
             margin: auto;
             font-size: 11px;
             font-weight: $boldWeight;
             opacity: 65%;
          }
 
-         h1{
+         h1 {
             margin: auto;
             color: $whiteColor;
             font-size: 32px;
@@ -261,13 +261,15 @@ header{
 
 /* ------------- MAIN -------------- __ */
 main {
-  background-color: $greyColor;
-  padding: 0px 16.5px;
   h1 {
     color: white;
-    font-size: 35px;
-    font-family: "Frank Ruhl Libre";
+    font-size: 45px;
+    padding: 40px 0px 25px;
+    // font-family: $headerFont;
   }
+  // p {
+  //   // font-family: $paragraphFont;
+  // }
   // article {
   //   background-color: red;
   //   .card {
@@ -278,9 +280,15 @@ main {
   //     font-family: arial;
   //   }
   // }
-  aside {
+  section.upper {
+    background-color: $greyColor;
+    padding: 0 $gutterMobile;
+  }
+  section.lower {
+    padding: 0 50px 90px;
+    // padding: 40px 0px 25px;
     background-color: $yellowColor;
-    font-family: "Frank Ruhl Libre";
+    // font-family: "Frank Ruhl Libre";
     // display: flex;
     justify-content: center;
     align-items: center;
@@ -333,21 +341,21 @@ main {
 
 
 /* -------------- Footer -------------- __ */
-footer{
+footer {
    margin: 0 auto;
    font-family: "fira sans";
 
-   section{
+   section {
       display:grid;
       grid-template-columns: 1fr;
    }
-   article{
+   article {
       height: 170px;
       display: flex;
       justify-content: center;
       align-items: center;
    }
-   p{
+   p {
       width: 257px;
       height: 113px;
       display: flex;
@@ -355,7 +363,7 @@ footer{
       align-items: center;
       text-align: center;
    }
-   .box-a{
+   .box-a {
       background-color: $lightblueColor;
       font-size: 35px;
       font-family: "Frank Ruhl Libre";
@@ -364,28 +372,28 @@ footer{
       align-items: center;
       text-align: center;
    }
-   .box-b{
+   .box-b {
       background-color: $whiteColor;
    }
-   .box-c{
+   .box-c {
       background-color: $lightgreyColor;
       margin: 0;
       padding: 0;
    }
-   .box-d{
+   .box-d {
       background-color: $orangeColor;
 
    }
-   div.scroll-to-top{
+   div.scroll-to-top {
       height: 68px;
       background-color: $greyColor;
       width: 375px;
       text-align: center;
-      p{
+      p {
          height: fit-content;
       }
    }
-   .numb{
+   .numb {
       font-size: 35px;
       font-family: "Frank Ruhl Libre";
       color: #838383;
@@ -409,10 +417,10 @@ footer{
       vertical-align: top;
       width: 0.45em;
    }
-   span{
+   span {
       color: $primaryColor;
    }
-   .dark-box{
+   .dark-box {
       background-color: $darkgreyColor;
       height: 218px;
    }

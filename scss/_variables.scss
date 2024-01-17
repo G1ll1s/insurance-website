@@ -1,4 +1,7 @@
+/* ---------- Colors ---------- */
 // $primaryColor: #424e64;
+// $secondaryColor: #bbc2ca;
+$primaryColor: #000;
 $lightblueColor: #C7DDEA;
 $lightgreyColor: #E5E5E5;
 $orangeColor: #F17949;
@@ -7,22 +10,26 @@ $greyColor: #A9A19E;
 $whiteColor: #FFFFFF;
 $darkgreyColor: #777574;
 
-
-$primaryColor: #000;
-// $secondaryColor: #bbc2ca;
-// $fontColor: #35373a;
-// 
-// $defaultFont: 'Lato', sans-serif;
-// $normalWeight: 300;
-// $boldWeight: 700;
-// 
+/* ---------- Spacing ---------- */
+// Not: gutter (hängränna / rännsten)
+//      = ungefär 'kant-diken'
+$gutterMobile: 16.5px;
+// $gutterDesktop: ???px;
 // $gutter: 2%;
 // $gutterdbl: (2 * $gutter);
 
+/* ---------- Fonts ---------- */
+// $fontColor: #35373a;
+$headerFont: "Frank Ruhl Libre", serif, helvetica;
+$paragraphFont: "Fira sans", sans-serif, Arial;
+$pSizeDefault: 14px;
+$pLineHeight: 24px;
 $normalWeight: 500;
 $semiboldWeight: 600;
 $boldWeight: 700;
 
+// $normalWeight: 300;
+// $boldWeight: 700;
 
 
 

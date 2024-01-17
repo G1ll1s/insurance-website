@@ -100,6 +100,9 @@ input, select {
   vertical-align: middle;
 }
 
+/* ---------- Colors ---------- */
+/* ---------- Spacing ---------- */
+/* ---------- Fonts ---------- */
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
@@ -119,13 +122,28 @@ body {
   max-width: 375px;
   min-width: 375px;
 }
-body p {
-  font-family: "Fira sans", sans-serif, Arial;
-  font-weight: 500;
-}
 body h1 {
   font-family: "Frank Ruhl Libre", serif, helvetica;
   font-weight: 900;
+}
+body p {
+  font-family: "Fira sans", sans-serif, Arial;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 0.7;
+}
+body button {
+  background-color: white;
+  font-family: "Fira sans", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 14px 45px;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.144);
+  margin: 45px 0px;
+  cursor: pointer;
 }
 
 /* -------------- Header ------------- __ */
@@ -153,18 +171,6 @@ header article .covered p {
 header article .covered p span {
   opacity: 1;
   color: white;
-}
-header article .covered button {
-  background-color: white;
-  font-family: "Fira sans", sans-serif;
-  font-size: 10px;
-  font-weight: 700;
-  padding: 14px 45px;
-  border: 0;
-  border-radius: 30px;
-  box-shadow: 0px 2px rgba(0, 0, 0, 0.144);
-  margin: 45px 0px;
-  cursor: pointer;
 }
 header article .covered img {
   max-width: 100%;
@@ -230,18 +236,18 @@ header article .join-today h1 {
 
 /* ----------- Navigation ----------- __ */
 /* ------------- MAIN -------------- __ */
-main {
-  background-color: #A9A19E;
-  padding: 0px 16.5px;
-}
 main h1 {
   color: white;
-  font-size: 35px;
-  font-family: "Frank Ruhl Libre";
+  font-size: 45px;
+  padding: 40px 0px 25px;
 }
-main aside {
+main section.upper {
+  background-color: #A9A19E;
+  padding: 0 16.5px;
+}
+main section.lower {
+  padding: 0 50px 90px;
   background-color: #FAB131;
-  font-family: "Frank Ruhl Libre";
   justify-content: center;
   align-items: center;
   text-align: center;
