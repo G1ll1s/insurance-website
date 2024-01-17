@@ -266,6 +266,7 @@ main section.mid article.card .avatar1 {
   background-color: #C7DDEA;
   border-radius: 4px;
   margin: -1.5em auto auto auto;
+  overflow: hidden;
 }
 main section.mid article.card .avatar2 {
   width: 236px;
@@ -273,6 +274,7 @@ main section.mid article.card .avatar2 {
   background-color: #FAB131;
   border-radius: 4px;
   margin: -1.5em auto auto auto;
+  overflow: hidden;
 }
 main section.mid article.card .avatar3 {
   width: 236px;
@@ -280,6 +282,11 @@ main section.mid article.card .avatar3 {
   background-color: #F17949;
   border-radius: 4px;
   margin: -1.5em auto auto auto;
+  overflow: hidden;
+}
+main section.mid article.card .avatar1 img {
+  width: 40%;
+  transform: translate(85%, 5%);
 }
 main section.lower {
   padding: 0 50px 90px;
