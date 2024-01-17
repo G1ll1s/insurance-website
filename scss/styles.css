@@ -222,8 +222,11 @@ footer .box-a {
   justify-content: center;
   align-items: center;
 }
+footer .box-b {
+  background-color: #FFFFFF;
+}
 footer .box-c {
-  background-color: #EBEBEB;
+  background-color: #E5E5E5;
   margin: 0;
   padding: 0;
 }
