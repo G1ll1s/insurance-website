@@ -12,7 +12,7 @@ body {
    margin: 0 auto;
    background-color: #EBEBEB;
    max-width: 375px;
-   min-width: 375px;  
+   min-width: 375px; 
    
    h1 {
       font-family: "Frank Ruhl Libre", serif, helvetica;
@@ -391,6 +391,7 @@ footer {
       text-align: center;
       p {
          height: fit-content;
+         width: 375px;
       }
    }
    .numb {

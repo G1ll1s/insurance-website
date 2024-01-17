@@ -36,3 +36,28 @@
 //   div.blog article:nth-child(3n+1) { clear: left; }
 // }
 //
+
+
+/* -------------- Footer -------------- __ */
+footer{
+    width: 1002px;
+    .how-it-works{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    article{
+        width: 334px;
+        height: 340px;
+    }
+    .numb{
+        width: 334px;
+    }
+    div.scroll-to-top{
+        width: 1002px;
+        p{
+            width: 1002px;
+        }
+    }
+    .dark-box{
+        width: 1002px;
+    }
+}
