@@ -305,7 +305,7 @@ footer div.scroll-to-top {
 footer div.scroll-to-top p {
   height: -moz-fit-content;
   height: fit-content;
-  text-align: center;
+  width: 375px;
 }
 footer .numb {
   font-size: 35px;
@@ -359,6 +359,9 @@ footer .dark-box {
     width: 334px;
   }
   footer div.scroll-to-top {
+    width: 1002px;
+  }
+  footer div.scroll-to-top p {
     width: 1002px;
   }
   footer .dark-box {
