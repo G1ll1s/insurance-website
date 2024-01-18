@@ -138,6 +138,12 @@ body p {
   line-height: 24px;
   opacity: 0.7;
 }
+body a {
+  font-family: "Fira sans", sans-serif, Arial;
+  font-weight: 600;
+  color: #A9A19E;
+  font-size: 12px;
+}
 body button {
   background-color: white;
   font-family: "Fira sans", sans-serif;
@@ -159,87 +165,89 @@ body button:hover {
 /* -------------- Header ------------- __ */
 header {
   margin: 0 auto;
-}
-header article {
   display: grid;
+  width: 100%;
 }
-header article .covered {
+header .covered {
   background-color: #C7DDEA;
   display: flex;
   flex-wrap: wrap;
   padding: 0px 16.5px;
 }
-header article .covered h1 {
+header .covered h1 {
   font-size: 45px;
-  padding: 70px 0px 25px;
+  margin: 70px 0px 25px;
 }
-header article .covered p {
+header .covered p {
   opacity: 70%;
   font-size: 14px;
   line-height: 24px;
 }
-header article .covered p span {
+header .covered p span {
   opacity: 1;
   color: white;
 }
-header article .covered img {
+header .covered img {
   max-width: 100%;
 }
-header article nav {
-  background-color: white;
+header .nav {
+  background-color: #E5E5E5;
   display: grid;
   margin: 0 auto;
   width: 100%;
-  height: 100px;
   padding: 0px 20px;
-  grid-template-rows: "p p" "p p";
+  grid-template-rows: "a a" "a a";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   text-align: center;
 }
-header article nav p {
+header .nav a {
+  margin: 28px auto;
   font-weight: 600;
   font-size: 12px;
   color: #A9A19E;
+  text-decoration: none;
   cursor: pointer;
 }
-header article nav p:active {
+header .nav a:active {
   color: black;
 }
-header article .learn-more {
+header .learn-more {
   display: flex;
   flex-direction: column;
   background-color: #F17949;
   height: 315px;
-  padding: 130px 0px;
+  justify-content: center;
+  align-self: start;
 }
-header article .learn-more p {
-  margin: auto;
+header .learn-more p {
+  margin: 0 auto;
   font-size: 11px;
   font-weight: 700;
   opacity: 65%;
 }
-header article .learn-more h1 {
-  margin: auto;
+header .learn-more h1 {
+  margin: 0 auto;
   color: white;
   font-size: 32px;
 }
-header article .join-today {
+header .join-today {
   display: flex;
   flex-direction: column;
   background-color: #FAB131;
   height: 315px;
-  padding: 130px 0px;
+  justify-content: center;
+  align-self: start;
 }
-header article .join-today p {
-  margin: auto;
+header .join-today p {
+  margin: 0 auto;
   font-size: 11px;
   font-weight: 700;
   opacity: 65%;
 }
-header article .join-today h1 {
-  margin: auto;
+header .join-today h1 {
+  margin: 0 auto;
   color: #FFFFFF;
   font-size: 32px;
 }
@@ -424,9 +432,62 @@ footer .dark-box {
 }
 
 /* ----- Clearfix: Force an Element not to collapse -- */
-@media only screen and (min-width: 1002px) {
+@media only screen and (min-width: 1140px) {
   /* ------------- Body -------------- __ */
+  body {
+    max-width: 1002px;
+    background-color: #E5E5E5;
+  }
   /* ------------- Header -------------- __ */
+  header {
+    width: 100%;
+    grid-template-areas: "cov learn" "cov join" "nav nav";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 70px;
+  }
+  header .covered {
+    grid-area: cov;
+    height: 100%;
+    padding: 0;
+  }
+  header .covered h1 {
+    margin: 100px 100px 10px;
+  }
+  header .covered p {
+    position: relative;
+    margin-left: 100px;
+    margin-right: 138px;
+    margin-bottom: -5px;
+  }
+  header .covered img {
+    flex: 1;
+    width: 50%;
+    margin-left: 10rem;
+    margin-right: 16.5px;
+  }
+  header .covered button {
+    position: absolute;
+    top: 18rem;
+    margin-left: 5rem;
+  }
+  header .nav {
+    background-color: #E5E5E5;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+  }
+  header .nav a {
+    flex-direction: row;
+  }
+  header .learn-more {
+    grid-area: learn;
+    height: 100%;
+  }
+  header .join-today {
+    grid-area: join;
+    height: 100%;
+  }
   /* ------------- MAIN -------------- __ */
   /* -------------- Footer -------------- __ */
   footer {
