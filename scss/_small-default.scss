@@ -15,7 +15,7 @@ body {
    min-width: 375px; 
    
    h1 {
-      font-family: "Frank Ruhl Libre", serif, helvetica;
+      font-family: $headerFont;
       // font-optical-sizing: auto;
       font-weight: 900;
    }//end of h1
@@ -25,14 +25,14 @@ body {
    }
 
    p {
-      font-family: "Fira sans", sans-serif, Arial;
+      font-family: $paragraphFont;
       font-weight: $normalWeight;
       font-size: $pSizeDefault;
       line-height: $pLineHeight;
       opacity: 0.7;
    }//end of p
    a{
-      font-family: "Fira sans", sans-serif, Arial;
+      font-family: $paragraphFont;
       font-weight: $semiboldWeight;
       color: $greyColor;
       font-size: 12px;
@@ -40,7 +40,7 @@ body {
 
    button {
       background-color: white;            
-      font-family: "Fira sans", sans-serif;
+      font-family: $paragraphFont;
       font-size: 10px;
       font-weight: $boldWeight;
       padding: 14px 45px;
@@ -424,7 +424,7 @@ footer {
       justify-content: center;
       align-items: center;
    }
-   p {
+   p.how-it-works-text {
       width: 257px;
       height: 113px;
       display: flex;
@@ -465,7 +465,7 @@ footer {
    }
    .numb {
       font-size: 35px;
-      font-family: "Frank Ruhl Libre";
+      font-family: $headerFont;
       color: #838383;
       padding-top: 0.5rem;
       padding-left: 0.5rem;
