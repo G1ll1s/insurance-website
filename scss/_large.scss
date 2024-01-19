@@ -227,6 +227,9 @@ footer{
     .how-it-works{
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .how-it-works-text{
+      font-size: large;
+    }
     article{
         width: 334px;
         height: 340px;
@@ -234,6 +237,11 @@ footer{
     .numb{
         width: 334px;
     }
+    .numb{
+      width: 334px;
+      padding-top: 1rem;
+      padding-left: 1rem;
+  }
     div.scroll-to-top{
         width: 1002px;
         p{

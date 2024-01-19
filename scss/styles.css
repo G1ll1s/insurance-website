@@ -146,7 +146,7 @@ body a {
 }
 body button {
   background-color: white;
-  font-family: "Fira sans", sans-serif;
+  font-family: "Fira sans", sans-serif, Arial;
   font-size: 10px;
   font-weight: 700;
   padding: 14px 45px;
@@ -360,7 +360,7 @@ footer article {
   justify-content: center;
   align-items: center;
 }
-footer p {
+footer p.how-it-works-text {
   width: 257px;
   height: 113px;
   display: flex;
@@ -401,7 +401,7 @@ footer div.scroll-to-top p {
 }
 footer .numb {
   font-size: 35px;
-  font-family: "Frank Ruhl Libre";
+  font-family: "Frank Ruhl Libre", serif, helvetica;
   color: #838383;
   padding-top: 0.5rem;
   padding-left: 0.5rem;
@@ -432,7 +432,7 @@ footer .dark-box {
 }
 
 /* ----- Clearfix: Force an Element not to collapse -- */
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1002px) {
   /* ------------- Body -------------- __ */
   body {
     max-width: 1002px;
@@ -540,12 +540,20 @@ footer .dark-box {
   footer .how-it-works {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  footer .how-it-works-text {
+    font-size: large;
+  }
   footer article {
     width: 334px;
     height: 340px;
   }
   footer .numb {
     width: 334px;
+  }
+  footer .numb {
+    width: 334px;
+    padding-top: 1rem;
+    padding-left: 1rem;
   }
   footer div.scroll-to-top {
     width: 1002px;
@@ -555,5 +563,188 @@ footer .dark-box {
   }
   footer .dark-box {
     width: 1002px;
+  }
+}
+/* -------------- Caspers Contact Page -------------- __ */
+/* --------------------- Mobile --------------------- __ */
+.caspers-contact body {
+  max-width: 375px;
+  min-width: 375px;
+}
+.caspers-contact header {
+  display: flex;
+  height: 350px;
+  background-color: #C7DDEA;
+}
+.caspers-contact header img {
+  top: 1.87rem;
+  right: 130px;
+}
+.caspers-contact header h1 {
+  font-family: "Frank Ruhl Libre", serif, helvetica;
+  height: 350px;
+  font-family: "Frank Ruhl Libre", serif, helvetica;
+  font-weight: 900;
+  font-size: 27px;
+  padding-top: 20%;
+  text-align: center;
+  padding-left: 0.5rem;
+}
+.caspers-contact main {
+  background-color: #A9A19E;
+}
+.caspers-contact main nav {
+  height: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Fira sans", sans-serif, Arial;
+  text-align: center;
+}
+.caspers-contact main nav a {
+  text-decoration: none;
+  color: #A9A19E;
+  width: 93, 75px;
+  padding-top: 10px;
+}
+.caspers-contact main nav .current-page {
+  color: black;
+  background-color: #E5E5E5;
+}
+.caspers-contact main a:hover {
+  background-color: #E5E5E5;
+  color: #777574;
+}
+.caspers-contact main article {
+  height: 700px;
+}
+.caspers-contact main article h1 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.caspers-contact main article section {
+  color: #E5E5E5;
+  margin: 30px;
+}
+.caspers-contact main article section h2 {
+  margin-bottom: 0.2rem;
+  margin-left: 10px;
+}
+.caspers-contact main article section textarea {
+  width: 300px;
+  resize: none;
+}
+.caspers-contact main article section input {
+  width: 300px;
+  justify-self: flex-start;
+}
+.caspers-contact main article section ::-moz-placeholder {
+  color: #000;
+}
+.caspers-contact main article section ::placeholder {
+  color: #000;
+}
+.caspers-contact main button {
+  background-color: #FFFFFF;
+  font-family: "Fira sans", sans-serif, Arial;
+  font-size: 10px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.144);
+  cursor: pointer;
+  margin-left: 10.7rem;
+  margin-top: 0;
+}
+.caspers-contact footer .come-visit-us {
+  margin-top: -140px;
+  background-color: #FAB131;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.144);
+  width: 80%;
+  height: 200px;
+  margin-left: 37.5px;
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+.caspers-contact footer .come-visit-us h1 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-family: "Frank Ruhl Libre", serif, helvetica;
+  font-weight: 900;
+  font-size: 40px;
+}
+.caspers-contact footer .come-visit-us p {
+  margin: 10%;
+  margin-top: 0;
+  padding-bottom: 50px;
+  font-size: medium;
+}
+.caspers-contact footer iframe {
+  width: 375px;
+  height: 375px;
+  margin-top: -100px;
+  z-index: 0;
+}
+
+@media only screen and (min-width: 1002px) {
+  /* -------------- Caspers Contact Page -------------- __ */
+  /* -------------------- Desktop --------------------- __ */
+  .caspers-contact {
+    width: 1002px;
+  }
+  .caspers-contact header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .caspers-contact header img {
+    margin-top: 30px;
+  }
+  .caspers-contact header h1 {
+    display: flex;
+    justify-content: right;
+    font-size: 60px;
+  }
+  .caspers-contact header h1 br {
+    display: none;
+  }
+  .caspers-contact main {
+    height: 600px;
+  }
+  .caspers-contact main nav {
+    grid-template-columns: repeat(4, 1fr);
+    height: 40px;
+  }
+  .caspers-contact main article.input-area {
+    padding-top: 5%;
+    display: grid;
+    grid-template-areas: "h1 mail" "h1 message" "h1 message" "h1 button";
+    height: 500px;
+  }
+  .caspers-contact main article.input-area h1 {
+    grid-area: h1;
+  }
+  .caspers-contact main article.input-area .email-input {
+    grid-area: mail;
+    padding-top: 3.5%;
+  }
+  .caspers-contact main article.input-area .message-input {
+    grid-area: message;
+  }
+  .caspers-contact main article.input-area button {
+    grid-area: button;
+    max-width: 158.3px;
+    max-height: 40px;
+  }
+  .caspers-contact footer .come-visit-us {
+    width: 30%;
+    margin-top: 100px;
+  }
+  .caspers-contact footer iframe {
+    width: 1002px;
+    height: 400px;
+    margin-top: -300.6px;
   }
 }/*# sourceMappingURL=styles.css.map */
