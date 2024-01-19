@@ -594,6 +594,8 @@ footer .dark-box {
   background-color: #A9A19E;
 }
 .caspers-contact main nav {
+  background-color: #FFFFFF;
+  color: #A9A19E;
   height: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
