@@ -619,10 +619,10 @@ footer .dark-box {
 }
 .caspers-contact main nav .current-page {
   color: black;
-  background-color: #E5E5E5;
+  background-color: #EBEBEB;
 }
 .caspers-contact main a:hover {
-  background-color: #E5E5E5;
+  background-color: #EBEBEB;
   color: #777574;
 }
 .caspers-contact main article {
@@ -634,7 +634,7 @@ footer .dark-box {
   justify-items: center;
 }
 .caspers-contact main article section {
-  color: #E5E5E5;
+  color: #EBEBEB;
   margin: 30px;
 }
 .caspers-contact main article section h2 {
@@ -705,6 +705,18 @@ footer .dark-box {
   /* -------------------- Desktop --------------------- __ */
   .caspers-contact {
     width: 1002px;
+  }
+  .caspers-contact body {
+    min-width: 1202px;
+    max-width: 1202px;
+    width: 100%;
+  }
+  .caspers-contact .container {
+    background-color: white;
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
   }
   .caspers-contact header {
     display: grid;
