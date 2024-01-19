@@ -1,6 +1,18 @@
 /* -------------- Caspers Contact Page -------------- __ */
 /* -------------------- Desktop --------------------- __ */
 .caspers-contact{
+    body{
+        min-width: 1202px;
+        max-width: 1202px;
+        width: 100%;
+    }
+    .container{
+        background-color: white;
+        max-width: 1440px;
+        padding-left: 100px ;
+        padding-right: 100px;
+        margin: 0 auto;
+      }
     width: 1002px;
     header{
         display: grid;

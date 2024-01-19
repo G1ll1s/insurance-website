@@ -705,6 +705,18 @@ footer .dark-box {
   .caspers-contact {
     width: 1002px;
   }
+  .caspers-contact body {
+    min-width: 1202px;
+    max-width: 1202px;
+    width: 100%;
+  }
+  .caspers-contact .container {
+    background-color: white;
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
+  }
   .caspers-contact header {
     display: grid;
     grid-template-columns: 2fr 1fr;
