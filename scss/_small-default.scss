@@ -1,5 +1,7 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+   -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+}
 
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -10,9 +12,10 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /* -------------- Body -------------- __ */
 body {
    margin: 0 auto;
-   background-color: #EBEBEB;
+   background-color: $lightgreyColor;
    max-width: 375px;
    min-width: 375px; 
+
    
    h1 {
       font-family: $headerFont;
@@ -31,6 +34,7 @@ body {
       line-height: $pLineHeight;
       opacity: 0.7;
    }//end of p
+
    a{
       font-family: $paragraphFont;
       font-weight: $semiboldWeight;
@@ -103,7 +107,7 @@ header {
    }
 
    .nav {
-      background-color: $lightgreyColor;
+      background-color: white;
       display: grid;
       margin: 0 auto;
       width: 100%;
