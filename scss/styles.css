@@ -191,7 +191,7 @@ header .covered img {
   max-width: 100%;
 }
 header .nav {
-  background-color: #E5E5E5;
+  background-color: white;
   display: grid;
   margin: 0 auto;
   width: 100%;
@@ -381,7 +381,7 @@ footer .box-b {
   background-color: #FFFFFF;
 }
 footer .box-c {
-  background-color: #E5E5E5;
+  background-color: #EBEBEB;
   margin: 0;
   padding: 0;
 }
@@ -435,8 +435,16 @@ footer .dark-box {
 @media only screen and (min-width: 1002px) {
   /* ------------- Body -------------- __ */
   body {
-    max-width: 1002px;
-    background-color: #E5E5E5;
+    min-width: 1202px;
+    max-width: 1202px;
+    width: 100%;
+  }
+  .container {
+    background-color: white;
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
   }
   /* ------------- Header -------------- __ */
   header {
@@ -471,11 +479,12 @@ footer .dark-box {
     margin-left: 5rem;
   }
   header .nav {
-    background-color: #E5E5E5;
+    background-color: white;
     grid-area: nav;
     display: flex;
     justify-content: space-around;
     align-self: center;
+    padding: 0 125px;
   }
   header .nav a {
     flex-direction: row;
@@ -535,7 +544,7 @@ footer .dark-box {
   }
   /* -------------- Footer -------------- __ */
   footer {
-    width: 1002px;
+    width: 100%;
   }
   footer .how-it-works {
     grid-template-columns: 1fr 1fr 1fr;
