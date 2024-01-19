@@ -1,20 +1,10 @@
 /* ------------- Body -------------- __ */
-body{
+body {
   min-width: 1202px;
   max-width: 1202px;
   width: 100%;
-  // background-color: white;
-  // border: 3px red;
 }
-// body { background-image: url(../images/polonez_car.png) }
-//
-// div#wrapper {
-//   max-width: 1002px;
-//   margin: 2rem auto;
-//   box-shadow: 0 0 10px #000;
-//   background-color: white;
-// }
-.container{
+.container {
   background-color: white;
   max-width: 1440px;
   padding-left: 100px ;
@@ -23,7 +13,7 @@ body{
 }
 
 /* ------------- Header -------------- __ */
-header{
+header {
   width: 100%;
   grid-template-areas: 
   "cov learn"
@@ -32,39 +22,34 @@ header{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 70px ;
   
-
-  .covered{
+  .covered {
     grid-area: cov;
     height: 100%;
     padding: 0;
     
-
-    h1{
-      margin: 100px 100px 10px;
+    h1 {
+       margin: 100px 100px 10px;
     }
-
-    p{
-      position: relative;
-      margin-left: 100px;
-      margin-right: 138px;
-      margin-bottom: -5px;
+    p {
+       position: relative;
+       margin-left: 100px;
+       margin-right: 138px;
+       margin-bottom: -5px;
     }
-
-    img{
-      flex: 1;
-      width: 50%;
-      margin-left: 10rem;
-      margin-right: 16.5px;
+    img {
+       flex: 1;
+       width: 50%;
+       margin-left: 10rem;
+       margin-right: 16.5px;
     }
-    button{
-      position: absolute;
-      top: 18rem;
-      margin-left: 5rem;
-      
+    button {
+       position: absolute;
+       top: 18rem;
+       margin-left: 5rem;
     }
   }
   
-  .nav{
+  .nav {
     background-color: white;
     grid-area: nav;
     display: flex;
@@ -72,91 +57,20 @@ header{
     align-self: center;
     padding: 0 125px;
 
-    a{
-      flex-direction: row;
+    a {
+       flex-direction: row;
     }
-
   }
 
-  .learn-more{
-    grid-area: learn;
-    height: 100%;
+  .learn-more {
+     grid-area: learn;
+     height: 100%;
   }
-
-  .join-today{
-    grid-area: join;
-    height: 100%;
+  .join-today {
+     grid-area: join;
+     height: 100%;
   }
-
 }
-
-
-// header{
-//   margin: $centerAlign;
-//   display: grid;
-//   width: 100%;
-//   grid-template-areas: 
-//   "cov learn"
-//   "cov join"
-//   "nav nav";  
-//   grid-template-rows: 1fr 1fr 40px;
-//   grid-template-columns: 1fr 1fr;
-  
-//   .cov{
-//     grid-area: cov;
-//   }
-//   .navbar{
-//     grid-area: navbar;
-//   }
-//   .learn{
-//     grid-area: learn;
-//   }
-//   .join{
-//     grid-area: join;
-//   }
-
-//   article{
-
-//     .covered{
-//       // grid-area: cov;
-//       display: flex;
-
-//     }
-
-//     nav{
-//       // grid-area: nav;
-//       // display: flex;
-      
-//     }
-
-//     .learn-more{
-//       // grid-area: learn;
-//       display: flex;
-      
-//     }
-
-//     .join-today{
-//       // grid-area: join;
-//       display: flex;
-
-//     }
-
-//   }
-
-
-// }
-
-// nav {
-//   ul {
-//     margin-left: $gutter;
-//     border-left: 1px solid rgba(0,0,0,0.3);
-//   }
-//   ul li { width: auto }
-//   ul li:last-child { border-right: 1px solid rgba(0,0,0,0.3); }
-//   ul li a {
-//     padding: .5rem 1rem;
-//   }
-// }
 
 
 /* ------------- MAIN -------------- __ */
@@ -180,8 +94,6 @@ main {
     }
     button {
       grid-area: button;
-      // position: absolute;
-      // top: 8rem;
       margin-top: 0.2rem;
       margin-left: 4rem;
       max-width: 135px;
@@ -193,73 +105,54 @@ main {
       text-align: left;
       width: 60%;
       margin-left: 7.5rem;
-      // display: flex;
-      // justify-content: center;
-      // justify-items: center;
     }
   }
   section.mid {
-      grid-template-columns: 1fr 1fr 1fr;
-      margin-top: 10px;
-      // width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
   }
   section.lower {
-      height: 680px;
-      h1{
-          padding-top: 200px;
-      }
-      p{
-          margin: 225px;
-          margin-top: 0px;
-          width: 50%;
-          // text-align: center;
-      }
+    height: 680px;
+    h1 {
+      padding-top: 200px;
+    }
+    p {
+      margin: 225px;
+      margin-top: 0px;
+      width: 50%;
+    }
   }
 }
 
-// main {
-//   figure.photo { width: 25%-$gutterdbl; float: left; }
-// 
-//   div.blog article {
-//     float: left;
-//     width: 33.33%-$gutterdbl;
-//   }
-// 
-//   div.blog article:nth-child(2n+1) { clear: none; }
-//   div.blog article:nth-child(3n+1) { clear: left; }
-// }
-//
-
 
 /* -------------- Footer -------------- __ */
-footer{
-    width: 100%;
-    // width: 1002px;
-    .how-it-works{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .how-it-works-text{
-      font-size: large;
-    }
-    article{
-        width: 334px;
-        height: 340px;
-    }
-    .numb{
-        width: 334px;
-    }
-    .numb{
-      width: 334px;
-      padding-top: 1rem;
-      padding-left: 1rem;
+footer {
+  width: 100%;
+  .how-it-works {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-    div.scroll-to-top{
-        width: 1002px;
-        p{
-            width: 1002px;
-        }
+  .how-it-works-text {
+    font-size: large;
+  }
+  article {
+    width: 334px;
+    height: 340px;
+  }
+  .numb {
+    width: 334px;
+  }
+  .numb {
+    width: 334px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+  div.scroll-to-top {
+    width: 1002px;
+    p {
+      width: 1002px;
     }
-    .dark-box{
-        width: 1002px;
-    }
+  }
+  .dark-box {
+    width: 1002px;
+  }
 }

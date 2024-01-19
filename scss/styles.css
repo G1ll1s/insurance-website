@@ -102,6 +102,7 @@ input, select {
 
 /* ---------- Colors ---------- */
 /* card-avatars' bg-colors */
+/* note: tested, but no-go */
 /* ---------- Spacing ---------- */
 /* ---------- Fonts ---------- */
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
@@ -115,7 +116,6 @@ html {
   box-sizing: border-box;
 }
 
-/* __ */
 /* -------------- Body -------------- __ */
 body {
   margin: 0 auto;
@@ -221,16 +221,16 @@ header .learn-more {
   justify-content: center;
   align-self: start;
 }
+header .learn-more h1 {
+  margin: 0 auto;
+  color: white;
+  font-size: 32px;
+}
 header .learn-more p {
   margin: 0 auto;
   font-size: 11px;
   font-weight: 700;
   opacity: 65%;
-}
-header .learn-more h1 {
-  margin: 0 auto;
-  color: white;
-  font-size: 32px;
 }
 header .join-today {
   display: flex;
@@ -252,7 +252,6 @@ header .join-today h1 {
   font-size: 32px;
 }
 
-/* ----------- Navigation ----------- __ */
 /* ------------- MAIN -------------- __ */
 main h1 {
   color: white;
@@ -619,10 +618,10 @@ footer .dark-box {
 }
 .caspers-contact main nav .current-page {
   color: black;
-  background-color: #E5E5E5;
+  background-color: #EBEBEB;
 }
 .caspers-contact main a:hover {
-  background-color: #E5E5E5;
+  background-color: #EBEBEB;
   color: #777574;
 }
 .caspers-contact main article {
@@ -634,7 +633,7 @@ footer .dark-box {
   justify-items: center;
 }
 .caspers-contact main article section {
-  color: #E5E5E5;
+  color: #EBEBEB;
   margin: 30px;
 }
 .caspers-contact main article section h2 {
