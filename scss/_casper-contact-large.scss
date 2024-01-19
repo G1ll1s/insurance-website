@@ -1,0 +1,75 @@
+/* -------------- Caspers Contact Page -------------- __ */
+/* -------------------- Desktop --------------------- __ */
+.caspers-contact{
+    body{
+        min-width: 1202px;
+        max-width: 1202px;
+        width: 100%;
+    }
+    .container{
+        background-color: white;
+        max-width: 1440px;
+        padding-left: 100px ;
+        padding-right: 100px;
+        margin: 0 auto;
+      }
+    width: 1002px;
+    header{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        img{
+            margin-top: 30px;
+        }
+        h1{
+            display: flex;
+            justify-content: right;
+            font-size: 60px;
+            br{
+                display: none;
+            }
+        }
+    }
+    main{
+        height: 600px;
+        nav{
+            grid-template-columns: repeat(4, 1fr);
+            height: 40px;
+        }
+        article.input-area{
+            padding-top: 5%;
+            display: grid;
+            grid-template-areas: 
+            "h1 mail"
+            "h1 message"
+            "h1 message"
+            "h1 button";
+            height: 500px;
+            h1{
+                grid-area: h1;
+            }
+            .email-input{
+                grid-area: mail;
+                padding-top: 3.5%;
+            }
+            .message-input{
+                grid-area: message;
+            }
+            button{
+                grid-area: button;
+                max-width: 158.3px;
+                max-height: 40px;
+            }
+        }
+    }
+    footer{
+        .come-visit-us{
+            width: 30%;
+            margin-top: 100px
+        }
+        iframe{
+            width: 1002px;
+            height: 400px;
+            margin-top: -300.6px;
+        }
+    }
+}

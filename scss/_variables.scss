@@ -1,30 +1,26 @@
-// $primaryColor: #424e64;
+/* ---------- Colors ---------- */
+$primaryColor: #000;
 $lightblueColor: #C7DDEA;
-$lightgreyColor: #E5E5E5;
+$lightgreyColor: #EBEBEB;
 $orangeColor: #F17949;
 $yellowColor: #FAB131;
 $greyColor: #A9A19E;
 $whiteColor: #FFFFFF;
 $darkgreyColor: #777574;
+/* card-avatars' bg-colors */
+// $avatar-bgcolors: (child: $greyColor, adult: $yellowColor, senior: $orangeColor);
+// avatar-bgcolors[adult]
+/* note: tested, but no-go */
 
+/* ---------- Spacing ---------- */
+$gutterMobile: 16.5px;  // 'diken'
+// $gutterDesktop: ???px;
 
-$primaryColor: #000;
-// $secondaryColor: #bbc2ca;
-// $fontColor: #35373a;
-// 
-// $defaultFont: 'Lato', sans-serif;
-// $normalWeight: 300;
-// $boldWeight: 700;
-// 
-// $gutter: 2%;
-// $gutterdbl: (2 * $gutter);
-
+/* ---------- Fonts ---------- */
+$headerFont: "Frank Ruhl Libre", "MS Serif", Georgia, serif;
+$paragraphFont: "Fira sans", Helvetica, Arial, sans-serif;
+$pSizeDefault: 14px;
+$pLineHeight: 24px;
 $normalWeight: 500;
 $semiboldWeight: 600;
 $boldWeight: 700;
-
-
-
-
-
-

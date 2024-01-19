@@ -1,341 +1,279 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+   -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+}
 
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-/* __ */
 
 
 /* -------------- Body -------------- __ */
 body {
    margin: 0 auto;
-   background-color: #EBEBEB;
+   background-color: $lightgreyColor;
    max-width: 375px;
-      
-   
-   p{
-      font-family: "Fira sans", sans-serif, Arial;
-      font-weight: $normalWeight;
-   }//end of p
+   min-width: 375px; 
 
-   
-   h1{
-      font-family: "Frank Ruhl Libre", serif, helvetica;
-      // font-optical-sizing: auto;
+   h1 {
+      font-family: $headerFont;
       font-weight: 900;
-   }//end of h1
+   }
+   h3 {
+      font-family: $headerFont;
+      font-weight: $boldWeight;
+   }
+   p {
+      font-family: $paragraphFont;
+      font-weight: $normalWeight;
+      font-size: $pSizeDefault;
+      line-height: $pLineHeight;
+      opacity: 0.7;
+   }
+   a {
+      font-family: $paragraphFont;
+      font-weight: $semiboldWeight;
+      color: $greyColor;
+      font-size: 12px;
+   }
 
-//   font-family: $defaultFont;
-//   font-weight: $normalWeight;
+   button {
+      background-color: white;            
+      font-family: $paragraphFont;
+      font-size: 10px;
+      font-weight: $boldWeight;
+      padding: 14px 45px;
+      border: 0;
+      border-radius: 30px;          
+      box-shadow: 0px 2px rgba(0, 0, 0, 0.5);
+      margin: 45px 0px;
+      cursor: pointer;
+   } //end of button
+   button:hover {
+     cursor: pointer;
+     transition: transform 0.15s ease-in-out;
+     transform: scale(1.08);
+   }
 } //end of body
 
 
 /* -------------- Header ------------- __ */
-header{
-   margin: 0 auto;
+header {
+  margin: 0 auto;
+  display: grid;
+  width: 100%;
 
-   article{
-      display: grid;
-      
-    
-      .covered{
-         background-color: $lightblueColor;
-         display: flex;
-         flex-wrap: wrap;
-         padding: 0px 16.5px;
+  .covered {
+     background-color: $lightblueColor;
+     display: flex;
+     flex-wrap: wrap;
+     padding: 0px 16.5px;
 
-         h1{
-            font-size: 45px;
-            margin-top: 60px;
-            margin-bottom: 24px;
-         }//end of h1
+     h1 {
+        font-size: 45px;
+        margin: 70px 0px 25px;
+     }
+     p {
+        opacity: 70%;
+        font-size: 14px;
+        line-height: 24px;
+           
+        span {
+           opacity: 1;            
+           color: white;
+        }
+     } //end of p
 
-         p{
-            margin-bottom: 40px;
-            opacity: 70%;
-            font-size: 14px;
-            line-height: 24px;
+     img {
+        max-width: 100%;         
+     }
+  }
 
-            
-            span{
-               opacity: 1;            
-               color: white;
-            }
-            
-         }//end of p
+  .nav {
+     background-color: white;
+     display: grid;
+     margin: 0 auto;
+     width: 100%;
+     padding: 0px 20px ;
+     grid-template-rows: 
+     "a a"
+     "a a";
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     align-items: center;
+     text-align: center;
 
-         button{
-            background-color: white;            
-            font-family: "Fira sans", sans-serif;
-            font-size: 10px;
-            font-weight: $boldWeight;
-            padding: 14px 45px;
-            border: 0;
-            border-radius: 30px;          
-            box-shadow: 0px 2px rgba(0, 0, 0, 0.144);
-            margin-bottom: 45px;
-            
-         }//end of button
-         
-         img{
-            max-width: 100%;
-            
-            
-         }//end of img
+     a {
+        margin: 28px auto;
+        font-weight: $semiboldWeight;
+        font-size: 12px;
+        color: $greyColor;
+        text-decoration: none;
+        cursor: pointer;
+     }
+     a:active {
+        color: black;
+     }         
+  }
+     
+  .learn-more {
+     display: flex;
+     flex-direction: column;
+     background-color: $orangeColor;
+     height: 315px;
+     justify-content: center;
+     align-self: start;
 
-      }
-
-      nav{
-         background-color: white;
-         display: grid;
-         margin: 0 auto;
-         width: 100%;
-         height: 100px;
-         padding: 0px 20px ;
-         grid-template-rows: 
-         "p p"
-         "p p";
-         grid-template-columns: 1fr 1fr;
-         grid-template-rows: 1fr 1fr;
-         align-items: center;
-         text-align: center;
-
-         p{
-            font-weight: $semiboldWeight;
-            font-size: 12px;
-            color: $greyColor;
-            cursor: pointer;
-         }
-         p:active {
-            color: black;
-         }
-         
-
-      }
-
-      
-      
-      // nav{
-      //    display: flex;
-      //    margin: 0 auto;
-      //    justify-content: center;
-      //    align-items: center;
-      //    text-align: center;
-      //    width: 100%;
-      //    height: 60px;
-      //    gap: 60PX;
-
-      //    // justify-content: space-between;
-      //    // background-color: white;
-      //    // flex-direction: row;
-      //    // flex-wrap: wrap;
-
-      //    p{      
-      //       font-weight: $semiboldWeight;
-      //       // margin: 0 auto;
-      //       // margin-top: 30px;
-      //       // margin-bottom: 30px;
-      //    }         
-      // }
-
-      
-      
-      .learn-more{
-         display: flex;
-         flex-direction: column;
-         
-         background-color: $orangeColor;
-         height: 315px;
-         
-
-         p{
-            
-            margin: auto;
-            font-size: 11px;
-            font-weight: $boldWeight;
-            opacity: 65%;
-            
-         }
-         h1{
-            margin: auto;
-            color: white;
-            font-size: 32px;
-         }
-      }
-
-      .join-today{
-         display: flex;
-         flex-direction: column;
-         background-color: $yellowColor;
-         height: 315px;
-
-         p{
-            margin: auto;
-         }
-
-         h1{
-            margin: auto;
-         }
-      }
+     h1 {
+        margin: 0 auto;
+        color: white;
+        font-size: 32px;
+     }
+     p {
+        margin: 0 auto;
+        font-size: 11px;
+        font-weight: $boldWeight;
+        opacity: 65%;            
+     }
    }
 
+   .join-today {
+      display: flex;
+      flex-direction: column;
+      background-color: $yellowColor;
+      height: 315px;
+      justify-content: center;
+      align-self: start;
 
+      p {
+         margin: 0 auto;
+         font-size: 11px;
+         font-weight: $boldWeight;
+         opacity: 65%;
+      }
 
+      h1 {
+         margin: 0 auto;
+         color: $whiteColor;
+         font-size: 32px;
+      }
+   }
 }
-
-
-
-// header {
-//   background-color: $primaryColor;
-//   color: $secondaryColor;
-//   padding: 1rem $gutter;
-// 
-//   form { float: right; }
-//   form input {
-//     width: 6rem;
-//     border-radius: 10px;
-//     margin-right: 2%;
-//     padding: .2rem;
-//     border: none;
-//     transition: width .5s;
-//   }
-//   form input:focus { width: 8rem; }
-// 
-//   /* CSS 'auto'-nesting */
-//   /* ("a great feature of a CSS preprocessor") */
-//   h1 {
-//     /* double the default font size */
-//       /* def. is e.g. 16px */
-//     font-size: 2rem;
-//     font-weight: $normalWeight;
-//   }
-//   h2 {
-//     font-size: 1.1rem;
-//     font-weight: $normalWeight;
-//   }
-// }
-
-
-/* ----------- Navigation ----------- __ */
-// nav {
-//   background-color: $secondaryColor;
-//   border-bottom: 1px solid rgba(0,0,0,0.3);
-// 
-//   ul li {
-//     float: left;
-//     width: 25%;
-//     border-right: 1px solid rgba(0,0,0,0.3);
-//   }
-// 
-//   ul li:last-child { border-right: none; }
-// 
-//   ul li a {
-//     display: block;
-//     text-align: center;
-//     font-weight: $boldWeight;
-//     padding: .5rem 0;
-//     color: $primaryColor;
-//     text-decoration: none;
-//     transition: background 0.5s ease, color 0.5s ease;
-//   }
-// 
-//   ul li.active a {
-//     /* A nice CSS preproc. trick[!] */
-//     background-color: darken($secondaryColor, 10%);
-//   }
-// 
-//   /* Note: Moved to after active */
-//   /* (so the active also changes on hover) */
-//   ul li a:hover {
-//     color: $secondaryColor;
-//     background-color: $primaryColor;
-//   }
-// 
-// }
 
 
 /* ------------- MAIN -------------- __ */
 main {
-  background-color: $greyColor;
-  h1 {
-    color: white;
-  }
-  // article {
-  //   background-color: red;
-  //   .card {
-  //     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  //     max-width: 256px;
-  //     margin: auto;
-  //     text-align: center;
-  //     font-family: arial;
-  //   }
-  // }
-  aside {
-    background-color: $yellowColor;
-  }
+   h1 {
+      color: white;
+      font-size: 45px;
+      padding: 40px 0px 25px;
+   }
+   section.upper {
+      background-color: $greyColor;
+      padding: 0 $gutterMobile;
+   }
+   section.mid {
+      background-color: $greyColor;
+      display: grid;
+      grid-template-columns: 1fr;
+      article.card {
+         background-color: white;
+         width: 256px;
+         height: 308px;
+         align-items: center;
+         border-radius: 4px;
+         margin: 2em auto;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+         .avatar1 {
+            width: 236px;
+            height: 150px;
+            background-color: $lightblueColor;
+            border-radius: 4px;
+            margin: -1.5em auto auto auto;
+            overflow: hidden;
+         }
+         .avatar2 {
+            width: 236px;
+            height: 150px;
+            background-color: $yellowColor;
+            border-radius: 4px;
+            margin: -1.5em auto auto auto;
+            overflow: hidden;
+         }
+         .avatar3 {
+            width: 236px;
+            height: 150px;
+            background-color: $orangeColor;
+            border-radius: 4px;
+            margin: -1.5em auto auto auto;
+            overflow: hidden;
+         }
+
+         .avatar1 img {
+            width: 40%;
+            transform: translate(83%, 5%);
+         }
+         .avatar2 img {
+            width: 40%;
+            transform: translate(74%, 3%);
+         }
+         .avatar3 img {
+            width: 60%;
+            transform: translate(35%, 5%);
+         }
+       
+         h3, p {
+            text-align: center;
+            margin: 0.6rem auto;
+         }
+         h3 {
+            margin-top: 1.5rem;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: $boldWeight;
+            opacity: 0.9;
+         }
+         p {
+            font-size: 11px;
+            line-height: 18px;
+            font-weight: $boldWeight;
+            opacity: 0.5;
+            margin: auto 1.3rem;
+         }
+      }
+
+      article.card:hover {
+         cursor: pointer;
+         transition: transform 0.15s ease-in-out;
+         transform: scale(1.04);
+         box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.5);
+      }
+   }
+   section.lower {
+      padding: 0 50px 90px;
+      background-color: $yellowColor;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
 }
-// main {
-//   figure.banner { width: 100%; }
-//   /* TODO: Check */
-//   figure.banner img { width: 100%; }
-// 
-//   h1 {
-//     font-size: 2rem;
-//     margin: 1rem 0 0 $gutter;
-//     color: $primaryColor;
-//   }
-// 
-//   h2 {
-//     font-size: 1.5rem;
-//     margin: .75rem 0 0 $gutter;
-//     color: lighten($primaryColor, 10%)
-//   }
-// 
-//   h3 {
-//     font-size: 1.5rem;
-//     color: lighten($primaryColor, 20%)
-//   }
-//   p {
-//     line-height: 130%;
-//     color: $fontColor;
-//   }
-// 
-//   hr.fadeAway {
-//     background: linear-gradient(to right, rgba(66,78,100,1) 0%, rgba(66,100,78,0.01) 100%);
-//     height: 2px;
-//     border: none;
-//     /* Aha: sets TopBot and RightLeft */
-//     margin: 0 $gutter;
-//   }
-// 
-//   figure.photo { width: 100%-$gutterdbl; margin: .5rem $gutter; }
-//   figure.photo img { width: 100%; }
-//   figure.photo figcaption { text-align: center; color: $primaryColor; }
-// 
-//   div.blog article {
-//     margin: .5rem $gutter;
-//     width: 100%-$gutterdbl;
-//   }
-// }
 
 
 /* -------------- Footer -------------- __ */
-footer{
+footer {
    margin: 0 auto;
    font-family: "fira sans";
 
-   section{
-      display:grid;
+   section {
+      display: grid;
       grid-template-columns: 1fr;
    }
-   article{
+   article {
       height: 170px;
       display: flex;
       justify-content: center;
       align-items: center;
    }
-   p{
+   p.how-it-works-text {
       width: 257px;
       height: 113px;
       display: flex;
@@ -343,7 +281,7 @@ footer{
       align-items: center;
       text-align: center;
    }
-   .box-a{
+   .box-a {
       background-color: $lightblueColor;
       font-size: 35px;
       font-family: "Frank Ruhl Libre";
@@ -352,30 +290,31 @@ footer{
       align-items: center;
       text-align: center;
    }
-   .box-b{
+   .box-b {
       background-color: $whiteColor;
    }
-   .box-c{
+   .box-c {
       background-color: $lightgreyColor;
       margin: 0;
       padding: 0;
    }
-   .box-d{
+   .box-d {
       background-color: $orangeColor;
 
    }
-   div.scroll-to-top{
+   div.scroll-to-top {
       height: 68px;
       background-color: $greyColor;
       width: 375px;
       text-align: center;
-      p{
+      p {
          height: fit-content;
+         width: 375px;
       }
    }
-   .numb{
+   .numb {
       font-size: 35px;
-      font-family: "Frank Ruhl Libre";
+      font-family: $headerFont;
       color: #838383;
       padding-top: 0.5rem;
       padding-left: 0.5rem;
@@ -397,29 +336,14 @@ footer{
       vertical-align: top;
       width: 0.45em;
    }
-   span{
+   span {
       color: $primaryColor;
    }
-   .dark-box{
+   .dark-box {
       background-color: $darkgreyColor;
       height: 218px;
    }
 }
-   
-// footer {
-//   width: 100%;
-//   background-color: $primaryColor;
-// 
-//   p {
-//     text-align: center;
-//     color: $secondaryColor;
-//     padding: .75rem;
-//     font-size: .9rem;
-//   }
-// 
-//   p a { color: $secondaryColor; }
-// }
-
 
 /* ----- Clearfix: Force an Element not to collapse -- */
 // .clearfix:after {
@@ -428,4 +352,3 @@ footer{
 //   display: table;
 //   clear: both;
 // }
-

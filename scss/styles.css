@@ -100,6 +100,11 @@ input, select {
   vertical-align: middle;
 }
 
+/* ---------- Colors ---------- */
+/* card-avatars' bg-colors */
+/* note: tested, but no-go */
+/* ---------- Spacing ---------- */
+/* ---------- Fonts ---------- */
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
@@ -111,126 +116,232 @@ html {
   box-sizing: border-box;
 }
 
-/* __ */
 /* -------------- Body -------------- __ */
 body {
   margin: 0 auto;
   background-color: #EBEBEB;
   max-width: 375px;
-}
-body p {
-  font-family: "Fira sans", sans-serif, Arial;
-  font-weight: 500;
+  min-width: 375px;
 }
 body h1 {
-  font-family: "Frank Ruhl Libre", serif, helvetica;
+  font-family: "Frank Ruhl Libre", "MS Serif", Georgia, serif;
   font-weight: 900;
 }
-
-/* -------------- Header ------------- __ */
-header {
-  margin: 0 auto;
+body h3 {
+  font-family: "Frank Ruhl Libre", "MS Serif", Georgia, serif;
+  font-weight: 700;
 }
-header article {
-  display: grid;
-}
-header article .covered {
-  background-color: #C7DDEA;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px 16.5px;
-}
-header article .covered h1 {
-  font-size: 45px;
-  margin-top: 60px;
-  margin-bottom: 24px;
-}
-header article .covered p {
-  margin-bottom: 40px;
-  opacity: 70%;
+body p {
+  font-family: "Fira sans", Helvetica, Arial, sans-serif;
+  font-weight: 500;
   font-size: 14px;
   line-height: 24px;
+  opacity: 0.7;
 }
-header article .covered p span {
-  opacity: 1;
-  color: white;
+body a {
+  font-family: "Fira sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: #A9A19E;
+  font-size: 12px;
 }
-header article .covered button {
+body button {
   background-color: white;
-  font-family: "Fira sans", sans-serif;
+  font-family: "Fira sans", Helvetica, Arial, sans-serif;
   font-size: 10px;
   font-weight: 700;
   padding: 14px 45px;
   border: 0;
   border-radius: 30px;
-  box-shadow: 0px 2px rgba(0, 0, 0, 0.144);
-  margin-bottom: 45px;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.5);
+  margin: 45px 0px;
+  cursor: pointer;
 }
-header article .covered img {
+body button:hover {
+  cursor: pointer;
+  transition: transform 0.15s ease-in-out;
+  transform: scale(1.08);
+}
+
+/* -------------- Header ------------- __ */
+header {
+  margin: 0 auto;
+  display: grid;
+  width: 100%;
+}
+header .covered {
+  background-color: #C7DDEA;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 16.5px;
+}
+header .covered h1 {
+  font-size: 45px;
+  margin: 70px 0px 25px;
+}
+header .covered p {
+  opacity: 70%;
+  font-size: 14px;
+  line-height: 24px;
+}
+header .covered p span {
+  opacity: 1;
+  color: white;
+}
+header .covered img {
   max-width: 100%;
 }
-header article nav {
+header .nav {
   background-color: white;
   display: grid;
   margin: 0 auto;
   width: 100%;
-  height: 100px;
   padding: 0px 20px;
-  grid-template-rows: "p p" "p p";
+  grid-template-rows: "a a" "a a";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   text-align: center;
 }
-header article nav p {
+header .nav a {
+  margin: 28px auto;
   font-weight: 600;
   font-size: 12px;
   color: #A9A19E;
+  text-decoration: none;
   cursor: pointer;
 }
-header article nav p:active {
+header .nav a:active {
   color: black;
 }
-header article .learn-more {
+header .learn-more {
   display: flex;
   flex-direction: column;
   background-color: #F17949;
   height: 315px;
+  justify-content: center;
+  align-self: start;
 }
-header article .learn-more p {
-  margin: auto;
+header .learn-more h1 {
+  margin: 0 auto;
+  color: white;
+  font-size: 32px;
+}
+header .learn-more p {
+  margin: 0 auto;
   font-size: 11px;
   font-weight: 700;
   opacity: 65%;
 }
-header article .learn-more h1 {
-  margin: auto;
-  color: white;
-  font-size: 32px;
-}
-header article .join-today {
+header .join-today {
   display: flex;
   flex-direction: column;
   background-color: #FAB131;
   height: 315px;
+  justify-content: center;
+  align-self: start;
 }
-header article .join-today p {
-  margin: auto;
+header .join-today p {
+  margin: 0 auto;
+  font-size: 11px;
+  font-weight: 700;
+  opacity: 65%;
 }
-header article .join-today h1 {
-  margin: auto;
+header .join-today h1 {
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-size: 32px;
 }
 
-/* ----------- Navigation ----------- __ */
 /* ------------- MAIN -------------- __ */
-main {
-  background-color: #A9A19E;
-}
 main h1 {
   color: white;
+  font-size: 45px;
+  padding: 40px 0px 25px;
 }
-main aside {
+main section.upper {
+  background-color: #A9A19E;
+  padding: 0 16.5px;
+}
+main section.mid {
+  background-color: #A9A19E;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main section.mid article.card {
+  background-color: white;
+  width: 256px;
+  height: 308px;
+  align-items: center;
+  border-radius: 4px;
+  margin: 2em auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+main section.mid article.card .avatar1 {
+  width: 236px;
+  height: 150px;
+  background-color: #C7DDEA;
+  border-radius: 4px;
+  margin: -1.5em auto auto auto;
+  overflow: hidden;
+}
+main section.mid article.card .avatar2 {
+  width: 236px;
+  height: 150px;
   background-color: #FAB131;
+  border-radius: 4px;
+  margin: -1.5em auto auto auto;
+  overflow: hidden;
+}
+main section.mid article.card .avatar3 {
+  width: 236px;
+  height: 150px;
+  background-color: #F17949;
+  border-radius: 4px;
+  margin: -1.5em auto auto auto;
+  overflow: hidden;
+}
+main section.mid article.card .avatar1 img {
+  width: 40%;
+  transform: translate(83%, 5%);
+}
+main section.mid article.card .avatar2 img {
+  width: 40%;
+  transform: translate(74%, 3%);
+}
+main section.mid article.card .avatar3 img {
+  width: 60%;
+  transform: translate(35%, 5%);
+}
+main section.mid article.card h3, main section.mid article.card p {
+  text-align: center;
+  margin: 0.6rem auto;
+}
+main section.mid article.card h3 {
+  margin-top: 1.5rem;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  opacity: 0.9;
+}
+main section.mid article.card p {
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 700;
+  opacity: 0.5;
+  margin: auto 1.3rem;
+}
+main section.mid article.card:hover {
+  cursor: pointer;
+  transition: transform 0.15s ease-in-out;
+  transform: scale(1.04);
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.5);
+}
+main section.lower {
+  padding: 0 50px 90px;
+  background-color: #FAB131;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* -------------- Footer -------------- __ */
@@ -248,7 +359,7 @@ footer article {
   justify-content: center;
   align-items: center;
 }
-footer p {
+footer p.how-it-works-text {
   width: 257px;
   height: 113px;
   display: flex;
@@ -269,7 +380,7 @@ footer .box-b {
   background-color: #FFFFFF;
 }
 footer .box-c {
-  background-color: #E5E5E5;
+  background-color: #EBEBEB;
   margin: 0;
   padding: 0;
 }
@@ -285,10 +396,11 @@ footer div.scroll-to-top {
 footer div.scroll-to-top p {
   height: -moz-fit-content;
   height: fit-content;
+  width: 375px;
 }
 footer .numb {
   font-size: 35px;
-  font-family: "Frank Ruhl Libre";
+  font-family: "Frank Ruhl Libre", "MS Serif", Georgia, serif;
   color: #838383;
   padding-top: 0.5rem;
   padding-left: 0.5rem;
@@ -319,8 +431,342 @@ footer .dark-box {
 }
 
 /* ----- Clearfix: Force an Element not to collapse -- */
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1002px) {
   /* ------------- Body -------------- __ */
+  body {
+    min-width: 1202px;
+    max-width: 1202px;
+    width: 100%;
+  }
+  .container {
+    background-color: white;
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
+  }
   /* ------------- Header -------------- __ */
+  header {
+    width: 100%;
+    grid-template-areas: "cov learn" "cov join" "nav nav";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 70px;
+  }
+  header .covered {
+    grid-area: cov;
+    height: 100%;
+    padding: 0;
+  }
+  header .covered h1 {
+    margin: 100px 100px 10px;
+  }
+  header .covered p {
+    position: relative;
+    margin-left: 100px;
+    margin-right: 138px;
+    margin-bottom: -5px;
+  }
+  header .covered img {
+    flex: 1;
+    width: 50%;
+    margin-left: 10rem;
+    margin-right: 16.5px;
+  }
+  header .covered button {
+    position: absolute;
+    top: 18rem;
+    margin-left: 5rem;
+  }
+  header .nav {
+    background-color: white;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    padding: 0 125px;
+  }
+  header .nav a {
+    flex-direction: row;
+  }
+  header .learn-more {
+    grid-area: learn;
+    height: 100%;
+  }
+  header .join-today {
+    grid-area: join;
+    height: 100%;
+  }
   /* ------------- MAIN -------------- __ */
+  main article.upper-mid {
+    height: 612px;
+    background-color: #A9A19E;
+  }
+  main section.upper {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header para" "button para";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+  }
+  main section.upper h1 {
+    grid-area: header;
+    margin: 40px 80px 10px;
+  }
+  main section.upper button {
+    grid-area: button;
+    margin-top: 0.2rem;
+    margin-left: 4rem;
+    max-width: 135px;
+    max-height: 40px;
+  }
+  main section.upper p {
+    grid-area: para;
+    margin-top: 80px;
+    text-align: left;
+    width: 60%;
+    margin-left: 7.5rem;
+  }
+  main section.mid {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+  }
+  main section.lower {
+    height: 680px;
+  }
+  main section.lower h1 {
+    padding-top: 200px;
+  }
+  main section.lower p {
+    margin: 225px;
+    margin-top: 0px;
+    width: 50%;
+  }
+  /* -------------- Footer -------------- __ */
+  footer {
+    width: 100%;
+  }
+  footer .how-it-works {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  footer .how-it-works-text {
+    font-size: large;
+  }
+  footer article {
+    width: 334px;
+    height: 340px;
+  }
+  footer .numb {
+    width: 334px;
+  }
+  footer .numb {
+    width: 334px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+  footer div.scroll-to-top {
+    width: 1002px;
+  }
+  footer div.scroll-to-top p {
+    width: 1002px;
+  }
+  footer .dark-box {
+    width: 1002px;
+  }
+}
+/* -------------- Caspers Contact Page -------------- __ */
+/* --------------------- Mobile --------------------- __ */
+.caspers-contact body {
+  max-width: 375px;
+  min-width: 375px;
+}
+.caspers-contact header {
+  display: flex;
+  height: 350px;
+  background-color: #C7DDEA;
+}
+.caspers-contact header img {
+  top: 1.87rem;
+  right: 130px;
+}
+.caspers-contact header h1 {
+  font-family: "Frank Ruhl Libre", "MS Serif", Georgia, serif;
+  height: 350px;
+  font-family: "Frank Ruhl Libre", "MS Serif", Georgia, serif;
+  font-weight: 900;
+  font-size: 27px;
+  padding-top: 20%;
+  text-align: center;
+  padding-left: 0.5rem;
+}
+.caspers-contact main {
+  background-color: #A9A19E;
+}
+.caspers-contact main nav {
+  background-color: #FFFFFF;
+  color: #A9A19E;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Fira sans", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.caspers-contact main nav a {
+  text-decoration: none;
+  color: #A9A19E;
+  width: 93, 75px;
+  padding-top: 10px;
+}
+.caspers-contact main nav .current-page {
+  color: black;
+  background-color: #EBEBEB;
+}
+.caspers-contact main a:hover {
+  background-color: #EBEBEB;
+  color: #777574;
+}
+.caspers-contact main article {
+  height: 700px;
+}
+.caspers-contact main article h1 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.caspers-contact main article section {
+  color: #EBEBEB;
+  margin: 30px;
+}
+.caspers-contact main article section h2 {
+  margin-bottom: 0.2rem;
+  margin-left: 10px;
+}
+.caspers-contact main article section textarea {
+  width: 300px;
+  resize: none;
+}
+.caspers-contact main article section input {
+  width: 300px;
+  justify-self: flex-start;
+}
+.caspers-contact main article section ::-moz-placeholder {
+  color: #000;
+}
+.caspers-contact main article section ::placeholder {
+  color: #000;
+}
+.caspers-contact main button {
+  background-color: #FFFFFF;
+  font-family: "Fira sans", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.144);
+  cursor: pointer;
+  margin-left: 10.7rem;
+  margin-top: 0;
+}
+.caspers-contact footer .come-visit-us {
+  margin-top: -140px;
+  background-color: #FAB131;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.144);
+  width: 80%;
+  height: 200px;
+  margin-left: 37.5px;
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+.caspers-contact footer .come-visit-us h1 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-family: "Frank Ruhl Libre", "MS Serif", Georgia, serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+.caspers-contact footer .come-visit-us p {
+  margin: 10%;
+  margin-top: 0;
+  padding-bottom: 50px;
+  font-size: medium;
+}
+.caspers-contact footer iframe {
+  width: 375px;
+  height: 375px;
+  margin-top: -100px;
+  z-index: 0;
+}
+
+@media only screen and (min-width: 1002px) {
+  /* -------------- Caspers Contact Page -------------- __ */
+  /* -------------------- Desktop --------------------- __ */
+  .caspers-contact {
+    width: 1002px;
+  }
+  .caspers-contact body {
+    min-width: 1202px;
+    max-width: 1202px;
+    width: 100%;
+  }
+  .caspers-contact .container {
+    background-color: white;
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
+  }
+  .caspers-contact header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .caspers-contact header img {
+    margin-top: 30px;
+  }
+  .caspers-contact header h1 {
+    display: flex;
+    justify-content: right;
+    font-size: 60px;
+  }
+  .caspers-contact header h1 br {
+    display: none;
+  }
+  .caspers-contact main {
+    height: 600px;
+  }
+  .caspers-contact main nav {
+    grid-template-columns: repeat(4, 1fr);
+    height: 40px;
+  }
+  .caspers-contact main article.input-area {
+    padding-top: 5%;
+    display: grid;
+    grid-template-areas: "h1 mail" "h1 message" "h1 message" "h1 button";
+    height: 500px;
+  }
+  .caspers-contact main article.input-area h1 {
+    grid-area: h1;
+  }
+  .caspers-contact main article.input-area .email-input {
+    grid-area: mail;
+    padding-top: 3.5%;
+  }
+  .caspers-contact main article.input-area .message-input {
+    grid-area: message;
+  }
+  .caspers-contact main article.input-area button {
+    grid-area: button;
+    max-width: 158.3px;
+    max-height: 40px;
+  }
+  .caspers-contact footer .come-visit-us {
+    width: 30%;
+    margin-top: 100px;
+  }
+  .caspers-contact footer iframe {
+    width: 1002px;
+    height: 400px;
+    margin-top: -300.6px;
+  }
 }/*# sourceMappingURL=styles.css.map */
