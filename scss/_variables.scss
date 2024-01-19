@@ -9,7 +9,6 @@ $yellowColor: #FAB131;
 $greyColor: #A9A19E;
 $whiteColor: #FFFFFF;
 $darkgreyColor: #777574;
-$centerAlign: 0px auto;
 /* card-avatars' bg-colors */
 $avatar-bgcolors: (child: $greyColor, adult: $yellowColor, senior: $orangeColor);
 // avatar-bgcolors[adult]
@@ -24,8 +23,8 @@ $gutterMobile: 16.5px;
 
 /* ---------- Fonts ---------- */
 // $fontColor: #35373a;
-$headerFont: "Frank Ruhl Libre", serif, helvetica;
-$paragraphFont: "Fira sans", sans-serif, Arial;
+$headerFont: "Frank Ruhl Libre", "MS Serif", Georgia, serif;
+$paragraphFont: "Fira sans", Helvetica, Arial, sans-serif;
 $pSizeDefault: 14px;
 $pLineHeight: 24px;
 $normalWeight: 500;
