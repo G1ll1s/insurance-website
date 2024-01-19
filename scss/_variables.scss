@@ -1,6 +1,4 @@
 /* ---------- Colors ---------- */
-// $primaryColor: #424e64;
-// $secondaryColor: #bbc2ca;
 $primaryColor: #000;
 $lightblueColor: #C7DDEA;
 $lightgreyColor: #EBEBEB;
@@ -10,19 +8,15 @@ $greyColor: #A9A19E;
 $whiteColor: #FFFFFF;
 $darkgreyColor: #777574;
 /* card-avatars' bg-colors */
-$avatar-bgcolors: (child: $greyColor, adult: $yellowColor, senior: $orangeColor);
+// $avatar-bgcolors: (child: $greyColor, adult: $yellowColor, senior: $orangeColor);
 // avatar-bgcolors[adult]
+/* note: tested, but no-go */
 
 /* ---------- Spacing ---------- */
-// Not: gutter (hängränna / rännsten)
-//      = ungefär 'kant-diken'
-$gutterMobile: 16.5px;
+$gutterMobile: 16.5px;  // 'diken'
 // $gutterDesktop: ???px;
-// $gutter: 2%;
-// $gutterdbl: (2 * $gutter);
 
 /* ---------- Fonts ---------- */
-// $fontColor: #35373a;
 $headerFont: "Frank Ruhl Libre", "MS Serif", Georgia, serif;
 $paragraphFont: "Fira sans", Helvetica, Arial, sans-serif;
 $pSizeDefault: 14px;
@@ -30,11 +24,3 @@ $pLineHeight: 24px;
 $normalWeight: 500;
 $semiboldWeight: 600;
 $boldWeight: 700;
-
-// $normalWeight: 300;
-// $boldWeight: 700;
-
-
-
-
-
